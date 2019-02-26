@@ -38,12 +38,13 @@ $blue:    #007bff !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
-$red:     #dc3545 !default;
+$red:     #E2322B !default;
 $orange:  #fd7e14 !default;
 $yellow:  #ffc107 !default;
 $green:   #28a745 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
+$primary: #363739;
 
 $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -61,12 +62,13 @@ $colors: map-merge(
     "cyan":       $cyan,
     "white":      $white,
     "gray":       $gray-600,
-    "gray-dark":  $gray-800
+    "gray-dark":  $gray-800,
+    "primary" :   $primary
   ),
   $colors
 );
 
-$primary:       $blue !default;
+$primary:       $primary !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -148,7 +150,9 @@ $sizes: () !default;
 $sizes: map-merge(
   (
     25: 25%,
+    33: 33%,
     50: 50%,
+    66: 67%,
     75: 75%,
     100: 100%,
     auto: auto
@@ -190,6 +194,7 @@ $paragraph-margin-bottom:   1rem !default;
 
 $grid-breakpoints: (
   xs: 0,
+  ss: 450px,
   sm: 576px,
   md: 768px,
   lg: 992px,
@@ -205,7 +210,7 @@ $grid-breakpoints: (
 // Define the maximum width of `.container` for different screen sizes.
 
 $container-max-widths: (
-  sm: 540px,
+  //sm: 540px,
   md: 720px,
   lg: 960px,
   xl: 1140px

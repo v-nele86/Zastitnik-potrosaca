@@ -1,8 +1,41 @@
+/*GOOGLE FONTS*/
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&subset=latin-ext");
+/*GENERATED FONTS*/
+@font-face {
+  font-family: 'Adelle-Bold';
+  src: url("../fonts/Adelle-Bold/Adelle-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Adelle-Bold/Adelle-Bold.woff") format("woff"), url("../fonts/Adelle-Bold/Adelle-Bold.ttf") format("truetype"), url("../fonts/Adelle-Bold/Adelle-Bold.svg#Adelle-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url("../fonts/ProximaNova-Bold/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold/ProximaNova-Bold.ttf") format("truetype"), url("../fonts/ProximaNova-Bold/ProximaNova-Bold.svg#ProximaNova-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url("../fonts/ProximaNova-Regular/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular/ProximaNova-Regular.ttf") format("truetype"), url("../fonts/ProximaNova-Regular/ProximaNova-Regular.svg#ProximaNova-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/*GENERAL VARIABLES*/
+/*GENERAL STYLE*/
 html {
   font-size: 14px; }
 
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #363739; }
+
 img {
-  max-width: 100%; }
+  max-width: 100%;
+  display: block;
+  width: 100%;
+  background-size: cover; }
+
+h4 {
+  font-size: 1.43rem;
+  font-family: "Adelle-Bold";
+  margin-bottom: 0; }
 
 .img-holder {
   position: relative;
@@ -59,7 +92,6 @@ img {
   100% {
     -webkit-transform: translateX(-1px) rotate(0);
     transform: translateX(-1px) rotate(0); } }
-
 @keyframes buzz {
   10% {
     -webkit-transform: translateX(3px) rotate(2deg);
@@ -91,7 +123,6 @@ img {
   100% {
     -webkit-transform: translateX(-1px) rotate(0);
     transform: translateX(-1px) rotate(0); } }
-
 .buzz {
   display: block;
   vertical-align: middle;
@@ -122,7 +153,6 @@ img {
   100% {
     opacity: 1;
     transform: translateX(0); } }
-
 @-webkit-keyframes slideLeft {
   0% {
     opacity: 0;
@@ -130,7 +160,6 @@ img {
   100% {
     opacity: 1;
     transform: translateX(0); } }
-
 .slideLeft {
   animation-name: slideLeft;
   visibility: visible;
@@ -144,7 +173,6 @@ img {
   100% {
     opacity: 1;
     transform: translateX(0); } }
-
 @-webkit-keyframes slideRight {
   0% {
     opacity: 0;
@@ -152,7 +180,6 @@ img {
   100% {
     opacity: 1;
     transform: translateX(0); } }
-
 .slideRight {
   animation-name: slideRight;
   visibility: visible;
@@ -166,7 +193,6 @@ img {
   100% {
     opacity: 1;
     transform: translateY(0); } }
-
 @-webkit-keyframes slideUp {
   0% {
     opacity: 0;
@@ -174,7 +200,6 @@ img {
   100% {
     opacity: 1;
     transform: translateY(0); } }
-
 .slideUp {
   animation-name: slideUp;
   visibility: visible;
@@ -187,7 +212,6 @@ img {
   100% {
     opacity: 1;
     transform: translateX(0); } }
-
 @-webkit-keyframes slideDown {
   0% {
     opacity: 0;
@@ -195,7 +219,6 @@ img {
   100% {
     opacity: 1;
     transform: translateX(0); } }
-
 .slideDown {
   animation-name: slideDown;
   visibility: visible;
@@ -213,13 +236,11 @@ img {
     transform: scale(0); }
   100% {
     transform: scale(1); } }
-
 @-webkit-keyframes zoom {
   0% {
     transform: scale(0); }
   100% {
     transform: scale(1); } }
-
 .form-control-success,
 .form-control-warning,
 .form-control-danger {
@@ -285,3 +306,65 @@ img {
 
 .error-msg > * {
   color: #d9534f; }
+
+header {
+  border-bottom: 1px solid #EBEBEB;
+  box-shadow: 0 2px 4px 0 #F0F7FF;
+  background-color: #fff; }
+  header .navbar .navbar-brand {
+    max-width: 33%; }
+  header .navbar .nav-report {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    color: #fff;
+    font-size: 0.7rem; }
+  header .navbar .navbar-toggler {
+    border: 1px solid #363739; }
+
+.header-scroll-bg {
+  background-color: rgba(255, 255, 255, 0.8); }
+
+.header-scroll-height {
+  width: 200px; }
+
+.news {
+  margin-bottom: 29px; }
+  .news .news-item-big .news-item-pic {
+    border-radius: 3px; }
+  .news .news-item-big .news-item-title {
+    line-height: 1.93rem;
+    max-height: 5.79rem;
+    overflow: hidden; }
+  .news .news-item-small .news-item-pic {
+    border-radius: 3px;
+    width: 100%; }
+  .news .news-item-small .news-item-title {
+    line-height: 1.93rem;
+    max-height: 5.79rem;
+    overflow: hidden; }
+    .news .news-item-small .news-item-title:after {
+      content: '';
+      display: block;
+      height: 3px;
+      width: 57px;
+      background: #E2322B; }
+
+@media (min-width: 450px) {
+  .news .news-item-small .news-item-pic {
+    width: 33%; }
+  .news .news-item-small .news-item-title {
+    width: 67%; } }
+@media (min-width: 576px) {
+  .news .news-item-big .news-item-pic {
+    margin-bottom: 17px !important; }
+  .news .news-item-small .news-item-pic {
+    width: 100%; }
+  .news .news-item-small .news-item-title {
+    width: 100%; } }
+@media (min-width: 768px) {
+  .news .news-item-small .news-item-pic {
+    width: 33%; }
+  .news .news-item-small .news-item-title {
+    width: 67%; } }
+
+/*# sourceMappingURL=theme.css.map */

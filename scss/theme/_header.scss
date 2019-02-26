@@ -1,1 +1,34 @@
 
+
+header{
+    border-bottom: 1px solid #EBEBEB;
+    box-shadow: 0 2px 4px 0 #F0F7FF;
+    background-color: $header-bg-color;
+    
+    .navbar{
+        
+        
+        .navbar-brand{
+            max-width: 33%;
+        }
+        
+        .nav-report{
+            font-family: $font-ubuntu;
+            font-weight: $header-link-font-weight;
+            color: $header-link-color;
+            font-size: $header-link-font-size;
+        }
+        
+        .navbar-toggler{
+            border: 1px solid $header-navbar-toggler-border-color;
+        }
+        
+    }
+}
+
+.header-scroll-bg{
+    background-color: $header-scroll-bg-color;
+}
+.header-scroll-height{
+    width: 200px;
+}

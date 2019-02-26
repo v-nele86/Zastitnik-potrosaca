@@ -1,14 +1,43 @@
+/*GENERAL VARIABLES*/
+$font-ubuntu: 'Ubuntu', sans-serif;
+$font-adelle-bold: 'Adelle-Bold';
+$font-color-body: #363739;
+
+
+$header-bg-color: $white;
+$header-scroll-bg-color: rgba($header-bg-color, 0.8);
+$header-link-font-weight: bold;
+$header-link-color: #fff;
+$header-link-font-size: 0.7rem;
+$header-navbar-toggler-border-color: $primary;
+
+
+/*GENERAL STYLE*/
 
 html{
     font-size: 14px;
 }
 
+body{
+    font-family: $font-ubuntu;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: $font-color-body;
+}
+
 img{
     max-width: 100%;
+    display: block;
+    width: 100%;
+    background-size: cover;
+}
+
+h4{
+    font-size: 1.43rem;
+    font-family: $font-adelle-bold;
+    margin-bottom: 0;
 }
 
 // Placeholder for image
-
 
 .img-holder{
     position: relative;

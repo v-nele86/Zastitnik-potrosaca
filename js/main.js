@@ -2,6 +2,22 @@ $(document).ready(function () {
     
     
     
+    
+    //HEADER SCROLL ANIMATION
+    function headerScroll(){
+        var scroll = $(window).scrollTop();
+        if (scroll > 50){
+//            $('header').addClass('header-scroll-bg');
+            $('.navbar').addClass('py-0').removeClass('py-2');
+            $('navbar-brand').addClass('header-scroll-height');
+        }else{
+//            $('header').removeClass('header-scroll-bg');
+            $('.navbar').removeClass('py-0').addClass('py-2');
+            $('navbar-brand').removeClass('header-scroll-height');
+        }
+    }
+    
+    
     //FILL ELEMENTS DEPENDS OF CATEGORY
     $('[data-category]').each(function () {
         var color = $(this).data('category');
@@ -39,10 +55,14 @@ $(document).ready(function () {
         });
 
     }
-
+    
+    
+    
+    headerScroll();
     animation();
 
     $(window).scroll(function () {
+        headerScroll();
         animation();
     });
     
