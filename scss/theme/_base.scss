@@ -2,14 +2,23 @@
 $font-ubuntu: 'Ubuntu', sans-serif;
 $font-adelle-bold: 'Adelle-Bold';
 $font-color-body: #363739;
+$font-proximanova-regular: 'ProximaNova-Regular';
+$font-proximanova-bold: 'ProximaNova-Bold';
 
 
 $header-bg-color: $white;
 $header-scroll-bg-color: rgba($header-bg-color, 0.8);
-$header-link-font-weight: bold;
-$header-link-color: #fff;
-$header-link-font-size: 0.7rem;
+$header-report-font-weight: bold;
+$header-report-color: #fff;
+$header-report-font-size: 0.7rem;
 $header-navbar-toggler-border-color: $primary;
+$header-link-color: $primary;
+$header-link-font-family: $font-proximanova-regular;
+$header-link-font-size: 1.14rem;
+$header-link-spacing: -0.17px;
+$header-link-padding-x: 1.14rem;
+$header-link-padding-y: 0.5rem;
+$header-link-hover-color: lighten($header-link-color, 20%);
 
 
 /*GENERAL STYLE*/
