@@ -16,7 +16,13 @@
   src: url("../fonts/ProximaNova-Regular/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular/ProximaNova-Regular.ttf") format("truetype"), url("../fonts/ProximaNova-Regular/ProximaNova-Regular.svg#ProximaNova-Regular") format("svg");
   font-weight: normal;
   font-style: normal; }
-/*GENERAL VARIABLES*/
+/*****************************
+GENERAL VARIABLES
+*****************************/
+/*****************************
+HEADER VARIABLES
+*****************************/
+/*$header-navbar-bg-mobile: $primary;*/
 /*GENERAL STYLE*/
 html {
   font-size: 14px; }
@@ -323,14 +329,19 @@ header {
       font-size: 0.7rem; }
     header .navbar .navbar-toggler {
       border: 1px solid #363739; }
+    header .navbar .navbar-nav .nav-item:last-of-type .nav-link {
+      border-bottom: none; }
     header .navbar .navbar-nav .nav-link {
+      text-align: center;
       color: #363739 !important;
       font-family: "ProximaNova-Regular";
       font-size: 1.14rem;
-      letter-spacing: -0.17px;
-      padding: 1.14rem 0.5rem; }
+      letter-spacing: 0;
+      padding: 0.5rem 1.14rem;
+      border-bottom: 1px solid #000; }
       header .navbar .navbar-nav .nav-link:hover, header .navbar .navbar-nav .nav-link.active {
-        color: #686a6d !important; }
+        color: #000 !important;
+        background-color: #cfd0d2; }
   header .navbar-light .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(54, 55, 57, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
 
@@ -339,7 +350,17 @@ header {
     max-width: 25%; } }
 @media (min-width: 992px) {
   header .navbar .header-scroll-height {
-    max-width: 15%; } }
+    max-width: 15%; }
+  header .navbar .navbar-nav .nav-link {
+    color: #363739 !important;
+    font-family: "ProximaNova-Regular";
+    font-size: 1.14rem;
+    letter-spacing: -0.17px;
+    padding: 0.5rem 1.14rem;
+    border-bottom: none; }
+    header .navbar .navbar-nav .nav-link:hover, header .navbar .navbar-nav .nav-link.active {
+      color: #686a6d !important;
+      background-color: transparent; } }
 .news {
   margin-bottom: 29px; }
   .news .news-item-big .news-item-pic {

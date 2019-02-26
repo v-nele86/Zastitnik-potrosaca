@@ -1,0 +1,45 @@
+
+/*****************************
+GENERAL VARIABLES
+*****************************/
+$font-ubuntu: 'Ubuntu', sans-serif;
+$font-adelle-bold: 'Adelle-Bold';
+$font-color-body: #363739;
+$font-proximanova-regular: 'ProximaNova-Regular';
+$font-proximanova-bold: 'ProximaNova-Bold';
+
+/*****************************
+HEADER VARIABLES
+*****************************/
+$header-bg-color: $white;
+
+$header-report-font-weight: bold;
+$header-report-color: #fff;
+$header-report-font-size: 0.7rem;
+
+$header-navbar-toggler-border-color: $primary;
+
+/*$header-navbar-bg-mobile: $primary;*/
+$header-link-text-align: center;
+
+
+$header-link-color-mobile: $primary;
+$header-link-font-family-mobile: $font-proximanova-regular;
+$header-link-font-size-mobile: 1.14rem;
+$header-link-spacing-mobile: 0;
+$header-link-padding-x-mobile: 1.14rem;
+$header-link-padding-y-mobile: 0.5rem;
+$header-link-hover-color-mobile: $black;
+$header-link-border-bottom-mobile: 1px solid $header-link-hover-color-mobile;
+$header-link-hover-bg-mobile: lighten($header-link-color-mobile, 60%);
+
+$header-link-color-desk: $primary;
+$header-link-font-family-desk: $font-proximanova-regular;
+$header-link-font-size-desk: 1.14rem;
+$header-link-spacing-desk: -0.17px;
+$header-link-padding-x-desk: 1.14rem;
+$header-link-padding-y-desk: 0.5rem;
+$header-link-hover-color-desk: lighten($header-link-color-desk, 20%);
+$header-link-border-bottom-desk: none;
+$header-link-hover-bg-desk: transparent;
+
