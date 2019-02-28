@@ -1,14 +1,16 @@
 
-
+/**********************HEADER GENERAL STYLE**********************/
 header{
     border-bottom: 1px solid #EBEBEB;
     box-shadow: 0 2px 4px 0 #F0F7FF;
     background-color: $header-bg-color;
     
     .navbar{
+        align-items: stretch;
         transition: 0.5s linear;
         
         .navbar-brand{
+            align-self: center;
             max-width: 40%;
             transition: 0.5s linear;
         }
@@ -18,6 +20,7 @@ header{
             font-weight: $header-report-font-weight;
             color: $header-report-color;
             font-size: $header-report-font-size;
+            align-self: center;
         }
         
         .navbar-toggler{
@@ -26,45 +29,38 @@ header{
         
         .hamburger{
             transform: scale(0.6);
+            align-self: center;
+        }
+        
+        .navbar-collapse{
+            align-items: stretch;
         }
         
         .navbar-nav{
-            .nav-item{
-                height: 100%;
-            }
-            
+                                 
             .nav-item:last-of-type .nav-link{
                 border-bottom: none;
             }
             
-            .nav-link{
-                height: 100%;
-                text-align: $header-link-text-align;
-                color: $header-link-color-mobile !important;
-                font-family: $header-link-font-family-mobile;
-                font-size: $header-link-font-size-mobile;
-                letter-spacing: $header-link-spacing-mobile;
-                padding: $header-link-padding-y-mobile $header-link-padding-x-mobile;
-                border-bottom: $header-link-border-bottom-mobile;
-                &:hover,
-                &.active{
+        .nav-link{
+            text-align: $header-link-text-align;
+            color: $header-link-color-mobile !important;
+            font-family: $header-link-font-family-mobile;
+            font-size: $header-link-font-size-mobile;
+            letter-spacing: $header-link-spacing-mobile;
+            padding: $header-link-padding-y-mobile $header-link-padding-x-mobile;
+            border-bottom: $header-link-border-bottom-mobile;
+            &:hover,
+            &.active{
                     color: $header-link-hover-color-mobile !important;
                     background-color: $header-link-hover-bg-mobile;
-                    }
                 }
-            
-                
-            
-        }
-        
+            }
+        }   
     }
-/*    .navbar-light{
-        .navbar-toggler-icon{
-            background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(54, 55, 57, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-        }
-    }*/
 }
 
+/**********************SS BREAKPOINT**********************/
 @media(min-width: 450px){
     header{
         .navbar{
@@ -75,47 +71,79 @@ header{
     }
 }
 
+/**********************SM BREAKPOINT**********************/
 @media(min-width: 576px){
     header{
         .navbar{
             .header-scroll-height{
                 max-width: 25%;
             }
-            
         }
     }
 }
 
+/**********************LG BREAKPOINT**********************/
 @media(min-width: 992px){
     header{
         .navbar{
+            
+            .navbar-brand{
+                max-width: 30%;
+            }
+            
             .header-scroll-height{
                 max-width: 15%;
             }
+            
             .navbar-nav{
+                
+                .nav-item:last-of-type .nav-link{
+                    border-bottom: 3px solid transparent;
+                    &:hover{
+                        color: $header-link-hover-color-desk !important;
+                        background-color: $header-link-hover-bg-desk;
+                        border-bottom: 3px solid $danger;
+                        }
+                    &.active{
+                            font-weight: $header-link-active-weight-desk;
+                            background-color: $header-link-hover-bg-desk;
+                            border-bottom: 3px solid $danger;
+                        }
+                    }
+                
+                .nav-item{
+                    display: flex;
+                }
+                
                 .nav-link{
+                    display: flex;
+                    align-items: center;
                     color: $header-link-color-desk !important;
                     font-family: $header-link-font-family-desk;
                     font-size: $header-link-font-size-desk;
                     letter-spacing: $header-link-spacing-desk;
                     padding: $header-link-padding-y-desk 0.7rem;
-                    border-bottom: $header-link-border-bottom-desk;
+                    border-bottom: 3px solid transparent;
+                    border-top: 3px solid transparent;
                     
                     &:hover{
                         color: $header-link-hover-color-desk !important;
                         background-color: $header-link-hover-bg-desk;
+                        border-bottom: 3px solid $danger;
                         }
                     &.active{
-                            font-weight: $header-link-active-weight-desk;
-                            background-color: $header-link-hover-bg-desk;
-                        }
+                        font-weight: $header-link-active-weight-desk;
+                        background-color: $header-link-hover-bg-desk;
+                        border-bottom: 3px solid $danger;
                     }
+                }
             }
             
         }
     }
 }
 
+/**********************XL BREAKPOINT**********************/
 @media(min-width: 1200px){
     header{
         .navbar{
