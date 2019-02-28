@@ -54,10 +54,16 @@ $(document).ready(function () {
 
     }
     
+    function hamburger(){
+        $('.hamburger').click(function(){
+            $(this).toggleClass('is-active');
+        });
+    }
     
     
     headerScroll();
     animation();
+    hamburger();
 
     $(window).scroll(function () {
         headerScroll();
