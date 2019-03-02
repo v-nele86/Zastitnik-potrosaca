@@ -25,28 +25,39 @@ HEADER VARIABLES
 /*report button*/
 /*navbar toggler*/
 /*navbar links style*/
+/*on lg breakpoint link-padding-x changed manually*/
 /*****************************
 MAIN VARIABLES
 *****************************/
+/*NEWS SECTION*/
+/*COMMENTS SECTION*/
 /*GENERAL STYLE*/
 html {
   font-size: 14px; }
 
 body {
   font-family: "Ubuntu", sans-serif;
-  background-color: rgba(255, 255, 255, 0.7);
+  background: radial-gradient(circle, #EFEFEF 0%, #FFFFFF 100%);
   color: #363739; }
 
 img {
   max-width: 100%;
   display: block;
-  width: 100%;
   background-size: cover; }
 
 h4 {
+  position: relative;
   font-size: 1.43rem;
-  font-family: "Adelle-Bold";
-  margin-bottom: 0; }
+  font-family: "Adelle-Bold"; }
+
+.bottom-after {
+  height: 3px;
+  width: 57px;
+  background: #E2322B;
+  margin-top: 0.7rem; }
+
+.image-zoom {
+  transform: scale(1.3); }
 
 .img-holder {
   position: relative;
@@ -64,6 +75,8 @@ h4 {
     padding-top: 75%; }
   .img-holder.size-16by9:after {
     padding-top: 56.25%; }
+  .img-holder.size-project:after {
+    padding-top: 58.75%; }
   .img-holder img {
     display: block;
     position: absolute;
@@ -71,6 +84,21 @@ h4 {
     left: 0;
     width: 100%; }
 
+main {
+  margin-top: 52.5px; }
+
+/**********************SS BREAKPOINT**********************/
+@media (min-width: 450px) {
+  main {
+    margin-top: 68px; } }
+/**********************SM BREAKPOINT**********************/
+@media (min-width: 576px) {
+  main {
+    margin-top: 90px; } }
+/**********************lg BREAKPOINT**********************/
+@media (min-width: 992px) {
+  .bottom-after {
+    margin-top: 1rem; } }
 /* Buzz Out */
 @-webkit-keyframes buzz {
   10% {
@@ -320,12 +348,17 @@ h4 {
 
 /**********************HEADER GENERAL STYLE**********************/
 header {
-  border-bottom: 1px solid #EBEBEB;
+  border-bottom: 1px solid header-border-bottom-color;
   box-shadow: 0 2px 4px 0 #F0F7FF;
-  background-color: #fff; }
+  background-color: #fff;
+  /*navigation*/ }
   header .navbar {
     align-items: stretch;
-    transition: 0.5s linear; }
+    transition: 0.5s linear;
+    /*navigation logo*/
+    /*report button*/
+    /*hamburger collapse*/
+    /*main menu*/ }
     header .navbar .navbar-brand {
       align-self: center;
       max-width: 40%;
@@ -363,86 +396,137 @@ header {
     transform: scale(0.7); } }
 /**********************SM BREAKPOINT**********************/
 @media (min-width: 576px) {
-  header .navbar .header-scroll-height {
-    max-width: 25%; } }
+  header .navbar {
+    /*header resize on scroll*/ }
+    header .navbar .header-scroll-height {
+      max-width: 25%; } }
 /**********************LG BREAKPOINT**********************/
 @media (min-width: 992px) {
-  header .navbar .navbar-brand {
-    max-width: 30%; }
-  header .navbar .header-scroll-height {
-    max-width: 15%; }
-  header .navbar .navbar-nav .nav-item:last-of-type .nav-link {
-    border-bottom: 3px solid transparent; }
-    header .navbar .navbar-nav .nav-item:last-of-type .nav-link:hover {
-      color: #686a6d !important;
-      background-color: transparent;
-      border-bottom: 3px solid #E2322B; }
-    header .navbar .navbar-nav .nav-item:last-of-type .nav-link.active {
-      font-weight: bold;
-      background-color: transparent;
-      border-bottom: 3px solid #E2322B; }
-  header .navbar .navbar-nav .nav-item {
-    display: flex; }
-  header .navbar .navbar-nav .nav-link {
-    display: flex;
-    align-items: center;
-    color: #363739 !important;
-    font-family: "ProximaNova-Regular";
-    font-size: 1.14rem;
-    letter-spacing: -0.17px;
-    padding: 0.5rem 0.7rem;
-    border-bottom: 3px solid transparent;
-    border-top: 3px solid transparent; }
-    header .navbar .navbar-nav .nav-link:hover {
-      color: #686a6d !important;
-      background-color: transparent;
-      border-bottom: 3px solid #E2322B; }
-    header .navbar .navbar-nav .nav-link.active {
-      font-weight: bold;
-      background-color: transparent;
-      border-bottom: 3px solid #E2322B; } }
+  header .navbar {
+    /*navigation logo*/
+    /*header resize on scroll*/
+    /*main menu*/ }
+    header .navbar .navbar-brand {
+      max-width: 30%; }
+    header .navbar .header-scroll-height {
+      max-width: 15%; }
+    header .navbar .navbar-nav .nav-item:last-of-type .nav-link {
+      border-bottom: 3px solid transparent; }
+      header .navbar .navbar-nav .nav-item:last-of-type .nav-link:hover {
+        color: #686a6d !important;
+        background-color: transparent;
+        border-bottom: 3px solid #E2322B; }
+      header .navbar .navbar-nav .nav-item:last-of-type .nav-link.active {
+        font-weight: bold;
+        background-color: transparent;
+        border-bottom: 3px solid #E2322B; }
+    header .navbar .navbar-nav .nav-item {
+      display: flex; }
+    header .navbar .navbar-nav .nav-link {
+      display: flex;
+      align-items: center;
+      color: #363739 !important;
+      font-family: "ProximaNova-Regular";
+      font-size: 1.14rem;
+      letter-spacing: -0.17px;
+      padding: 0.5rem 0.7rem;
+      border-bottom: 3px solid transparent;
+      border-top: 3px solid transparent; }
+      header .navbar .navbar-nav .nav-link:hover {
+        color: #686a6d !important;
+        background-color: transparent;
+        border-bottom: 3px solid #E2322B; }
+      header .navbar .navbar-nav .nav-link.active {
+        font-weight: bold;
+        background-color: transparent;
+        border-bottom: 3px solid #E2322B; } }
 /**********************XL BREAKPOINT**********************/
 @media (min-width: 1200px) {
-  header .navbar .navbar-nav .nav-link {
-    padding: 0.5rem 1.14rem; } }
-.news {
-  margin-bottom: 29px; }
-  .news .news-item-big .news-item-pic {
-    border-radius: 3px; }
-  .news .news-item-big .news-item-title {
-    line-height: 1.93rem;
-    max-height: 5.79rem;
-    overflow: hidden; }
+  header .navbar .navbar-nav {
+    /*main menu*/ }
+    header .navbar .navbar-nav .nav-link {
+      padding: 0.5rem 1.14rem; } }
+/**********************NEWS SECTION GENERAL STYLE**********************/
+.news .news-item-pic {
+  border-radius: 3px; }
+  .news .news-item-pic img {
+    transition: 0.5s linear; }
+.news .news-item-title {
+  line-height: 1.93rem;
+  max-height: 5.79rem;
+  letter-spacing: -0.22px;
+  overflow: hidden; }
+.news .news-item-small {
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  box-shadow: 0 15px 14px -10px rgba(88, 112, 148, 0.31); }
   .news .news-item-small .news-item-pic {
-    border-radius: 3px;
     width: 100%; }
-  .news .news-item-small .news-item-title {
-    line-height: 1.93rem;
-    max-height: 5.79rem;
+  .news .news-item-small .news-item-title-wrap {
+    width: 100%; }
+  .news .news-item-small .news-item-description {
+    letter-spacing: -0.17px;
+    line-height: 1.5rem;
+    max-height: 3rem;
     overflow: hidden; }
-    .news .news-item-small .news-item-title:after {
-      content: '';
-      display: block;
-      height: 3px;
-      width: 57px;
-      background: #E2322B; }
 
+/**********************SS BREAKPOINT**********************/
 @media (min-width: 450px) {
   .news .news-item-small .news-item-pic {
     width: 33%; }
-  .news .news-item-small .news-item-title {
+  .news .news-item-small .news-item-title-wrap {
     width: 67%; } }
+/**********************Sm BREAKPOINT**********************/
 @media (min-width: 576px) {
   .news .news-item-big .news-item-pic {
     margin-bottom: 17px !important; }
   .news .news-item-small .news-item-pic {
     width: 100%; }
-  .news .news-item-small .news-item-title {
+  .news .news-item-small .news-item-title-wrap {
     width: 100%; } }
+/**********************MD BREAKPOINT**********************/
 @media (min-width: 768px) {
   .news .news-item-small .news-item-pic {
     width: 33%; }
-  .news .news-item-small .news-item-title {
+  .news .news-item-small .news-item-title-wrap {
     width: 67%; } }
+/**********************LG BREAKPOINT**********************/
+@media (min-width: 992px) {
+  .news {
+    padding: 31px 0 15px !important; } }
+/**********************COMMENTS SECTION GENERAL STYLE**********************/
+.comments .comments-custom-padd {
+  padding-left: 5.5px !important;
+  padding-right: 5.5px !important; }
+.comments .comments-item {
+  position: relative;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  box-shadow: 0 15px 14px -10px rgba(88, 112, 148, 0.31); }
+  .comments .comments-item:after {
+    position: absolute;
+    content: '';
+    display: block;
+    border: 12px solid transparent;
+    border-top: 12px solid #fff;
+    bottom: -24px;
+    right: 24px; }
+  .comments .comments-item .comments-title {
+    font-family: "ProximaNova-Bold";
+    font-size: 1.14rem;
+    line-height: 1.36rem;
+    position: relative;
+    padding-left: 36px; }
+    .comments .comments-item .comments-title .fa {
+      position: absolute;
+      color: #9DC72D;
+      font-size: 1.5rem;
+      left: 0; }
+  .comments .comments-item .comments-content {
+    font-family: "ProximaNova-Regular";
+    font-size: 0.93rem;
+    line-height: 1.26rem;
+    max-height: 2.52rem;
+    overflow: hidden; }
 
 /*# sourceMappingURL=theme.css.map */

@@ -7,13 +7,21 @@ $(document).ready(function () {
     function headerScroll(){
         var scroll = $(window).scrollTop();
         if (scroll > 50){
-            $('.navbar').addClass('py-0').removeClass('py-2');
             $('.navbar-brand').addClass('header-scroll-height');
         }else{
-            $('.navbar').removeClass('py-0').addClass('py-2');
             $('.navbar-brand').removeClass('header-scroll-height');
         }
     }
+    
+    //IMAGE ZOOM ANIMATION
+    
+        $('.news-item').mouseenter(function(){
+            $(this).find('.news-item-img').addClass('image-zoom');
+        });
+        $('.news-item').mouseleave(function(){
+            $(this).find('.news-item-img').removeClass('image-zoom');
+        });
+    
     
     
     //FILL ELEMENTS DEPENDS OF CATEGORY

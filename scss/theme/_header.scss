@@ -1,20 +1,20 @@
 
 /**********************HEADER GENERAL STYLE**********************/
 header{
-    border-bottom: 1px solid #EBEBEB;
+    border-bottom: 1px solid header-border-bottom-color;
     box-shadow: 0 2px 4px 0 #F0F7FF;
     background-color: $header-bg-color;
-    
+    /*navigation*/
     .navbar{
         align-items: stretch;
         transition: 0.5s linear;
-        
+        /*navigation logo*/
         .navbar-brand{
             align-self: center;
             max-width: 40%;
             transition: 0.5s linear;
         }
-        
+        /*report button*/
         .nav-report{
             font-family: $font-ubuntu;
             font-weight: $header-report-font-weight;
@@ -22,26 +22,22 @@ header{
             font-size: $header-report-font-size;
             align-self: center;
         }
-        
+        /*hamburger collapse*/
         .navbar-toggler{
             border: 1px solid $header-navbar-toggler-border-color;
         }
-        
         .hamburger{
             transform: scale(0.6);
             align-self: center;
         }
-        
+        /*main menu*/
         .navbar-collapse{
             align-items: stretch;
         }
-        
-        .navbar-nav{
-                                 
+        .navbar-nav{                     
             .nav-item:last-of-type .nav-link{
                 border-bottom: none;
             }
-            
         .nav-link{
             text-align: $header-link-text-align;
             color: $header-link-color-mobile !important;
@@ -52,8 +48,8 @@ header{
             border-bottom: $header-link-border-bottom-mobile;
             &:hover,
             &.active{
-                    color: $header-link-hover-color-mobile !important;
-                    background-color: $header-link-hover-bg-mobile;
+                color: $header-link-hover-color-mobile !important;
+                background-color: $header-link-hover-bg-mobile;
                 }
             }
         }   
@@ -75,6 +71,7 @@ header{
 @media(min-width: 576px){
     header{
         .navbar{
+            /*header resize on scroll*/
             .header-scroll-height{
                 max-width: 25%;
             }
@@ -86,17 +83,16 @@ header{
 @media(min-width: 992px){
     header{
         .navbar{
-            
+            /*navigation logo*/
             .navbar-brand{
                 max-width: 30%;
             }
-            
+            /*header resize on scroll*/
             .header-scroll-height{
                 max-width: 15%;
             }
-            
+            /*main menu*/
             .navbar-nav{
-                
                 .nav-item:last-of-type .nav-link{
                     border-bottom: 3px solid transparent;
                     &:hover{
@@ -105,16 +101,14 @@ header{
                         border-bottom: 3px solid $danger;
                         }
                     &.active{
-                            font-weight: $header-link-active-weight-desk;
-                            background-color: $header-link-hover-bg-desk;
-                            border-bottom: 3px solid $danger;
+                        font-weight: $header-link-active-weight-desk;
+                        background-color: $header-link-hover-bg-desk;
+                        border-bottom: 3px solid $danger;
                         }
                     }
-                
                 .nav-item{
                     display: flex;
                 }
-                
                 .nav-link{
                     display: flex;
                     align-items: center;
@@ -125,7 +119,6 @@ header{
                     padding: $header-link-padding-y-desk 0.7rem;
                     border-bottom: 3px solid transparent;
                     border-top: 3px solid transparent;
-                    
                     &:hover{
                         color: $header-link-hover-color-desk !important;
                         background-color: $header-link-hover-bg-desk;
@@ -137,8 +130,7 @@ header{
                         border-bottom: 3px solid $danger;
                     }
                 }
-            }
-            
+            }    
         }
     }
 }
@@ -148,6 +140,7 @@ header{
     header{
         .navbar{
             .navbar-nav{
+                /*main menu*/
                 .nav-link{
                     padding: $header-link-padding-y-desk $header-link-padding-x-desk;
                 }

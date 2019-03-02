@@ -1,0 +1,43 @@
+
+/**********************COMMENTS SECTION GENERAL STYLE**********************/
+.comments{
+    .comments-custom-padd{
+        padding-left: 5.5px !important;
+        padding-right: 5.5px !important;
+    }
+    .comments-item{
+        position: relative;
+        border-radius: 3px;
+        background-color: #FFFFFF;
+        box-shadow: 0 15px 14px -10px rgba(88,112,148,0.31);
+        &:after{
+            position: absolute;
+            content: '';
+            display: block;
+            border: 12px solid transparent;
+            border-top: 12px solid #fff;
+            bottom: -24px;
+            right: 24px;
+        }
+        .comments-title{
+            font-family: $comments-title-font-family;
+            font-size: $comments-title-font-size;
+            line-height: $comments-title-line-height;
+            position: relative;
+            padding-left: 36px;
+            .fa{
+                position: absolute;
+                color: #9DC72D;
+                font-size: 1.5rem;
+                left: 0;
+            }
+        }
+        .comments-content{
+            font-family: $comments-content-font-family;
+            font-size: $comments-content-font-size;
+            line-height: $comments-content-line-height;
+            max-height: $comments-content-max-height;
+            overflow: hidden;
+        }
+    }
+}

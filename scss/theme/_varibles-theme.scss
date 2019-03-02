@@ -4,14 +4,24 @@ GENERAL VARIABLES
 *****************************/
 $font-ubuntu: 'Ubuntu', sans-serif;
 $font-adelle-bold: 'Adelle-Bold';
-$font-color-body: #363739;
 $font-proximanova-regular: 'ProximaNova-Regular';
 $font-proximanova-bold: 'ProximaNova-Bold';
+
+$font-color-body: #363739;
+
+$bottom-after-bg: $danger;
+$bottom-after-height: 3px;
+$bottom-after-width: 57px;
+$bottom-after-marg-top-mobile: 0.7rem;
+$bottom-after-marg-top-desk: 1rem;
+
+$h4-font-size: 1.43rem;
 
 /*****************************
 HEADER VARIABLES
 *****************************/
 $header-bg-color: $white;
+$header-border-bottom-color: #EBEBEB;
 /*report button*/
 $header-report-font-weight: bold;
 $header-report-color: #fff;
@@ -37,6 +47,7 @@ $header-link-color-desk: $primary;
 $header-link-font-family-desk: $font-proximanova-regular;
 $header-link-font-size-desk: 1.14rem;
 $header-link-spacing-desk: -0.17px;
+/*on lg breakpoint link-padding-x changed manually*/
 $header-link-padding-x-desk: 1.14rem;
 $header-link-padding-y-desk: 0.5rem;
 $header-link-hover-color-desk: lighten($header-link-color-desk, 20%);
@@ -46,3 +57,20 @@ $header-link-active-weight-desk: bold;
 /*****************************
 MAIN VARIABLES
 *****************************/
+/*NEWS SECTION*/
+$news-picture-border-rad: 3px;
+$news-item-title-line-height: 1.93rem;
+$news-item-title-max-height: 5.79rem;
+$news-item-small-border-rad: 8px;
+$news-item-small-bg: #FFFFFF;
+
+/*COMMENTS SECTION*/
+//comments title
+$comments-title-font-family: $font-proximanova-bold;
+$comments-title-font-size: 1.14rem;
+$comments-title-line-height: 1.36rem;
+//comments content
+$comments-content-font-family: $font-proximanova-regular;
+$comments-content-font-size: 0.93rem;
+$comments-content-line-height: 1.26rem;
+$comments-content-max-height: 2.52rem;

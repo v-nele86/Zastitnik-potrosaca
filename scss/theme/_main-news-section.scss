@@ -1,49 +1,52 @@
+
+/**********************NEWS SECTION GENERAL STYLE**********************/
 .news{
-    margin-bottom: 29px;
-    .news-item-big{
-        .news-item-pic{
-            border-radius: 3px;
-        }
-        .news-item-title{
-            line-height: 1.93rem;
-            max-height: 5.79rem;
-            overflow: hidden;
-            
+    .news-item-pic{
+        border-radius: $news-picture-border-rad;
+        img{
+            transition: 0.5s linear;
         }
     }
+    .news-item-title{
+        line-height: $news-item-title-line-height;
+        max-height: $news-item-title-max-height;
+        letter-spacing: -0.22px;
+        overflow: hidden;
+    }
     .news-item-small{
+        border-radius: $news-item-small-border-rad;
+        background-color: $news-item-small-bg;
+        box-shadow: 0 15px 14px -10px rgba(88,112,148,0.31);
         .news-item-pic{
-            border-radius: 3px;
             width: 100%;
         }
-        .news-item-title{
-            line-height: 1.93rem;
-            max-height: 5.79rem;
+        .news-item-title-wrap{
+            width: 100%;
+        }
+        .news-item-description{
+            letter-spacing: -0.17px;
+            line-height: 1.5rem;
+            max-height: 3rem;
             overflow: hidden;
-            &:after{
-                content: '';
-                display: block;
-                height: 3px;
-                width: 57px;
-                background: $danger;
-            }
         }
     }
 }
 
+/**********************SS BREAKPOINT**********************/
 @media(min-width: 450px){
     .news{
         .news-item-small{
             .news-item-pic{
                 width: 33%;
             }
-            .news-item-title{
+            .news-item-title-wrap{
                 width: 67%;
             }
         }
     }
 }
 
+/**********************Sm BREAKPOINT**********************/
 @media(min-width: 576px){
     .news{
         .news-item-big{
@@ -55,22 +58,30 @@
             .news-item-pic{
                 width: 100%;
             }
-            .news-item-title{
+            .news-item-title-wrap{
                 width: 100%;
             }
         }
     }
 }
 
+/**********************MD BREAKPOINT**********************/
 @media(min-width: 768px){
     .news{
         .news-item-small{
             .news-item-pic{
                 width: 33%;
             }
-            .news-item-title{
+            .news-item-title-wrap{
                 width: 67%;
             }
         }
+    }
+}
+
+/**********************LG BREAKPOINT**********************/
+@media(min-width: 992px){
+    .news{
+        padding: 31px 0 15px !important;
     }
 }
