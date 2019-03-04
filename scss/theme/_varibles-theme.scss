@@ -159,3 +159,28 @@ $banner-caption-comments-number-font-weight: bold;
 $banner-caption-comments-number-font-color: $white;
 $banner-caption-comments-number-font-size: 0.5rem;
 $banner-caption-comments-number-line-height: 0.71rem;
+
+/**********SIGNUP SECTION**********/
+$signup-section-padd-y-xl: 26px;
+$signup-section-bg: #EAEAEA;
+$signup-section-box-shadow: 0 15px 14px -10px rgba(88,112,148,0.31);
+//info icon
+$signup-icon-color: $danger;
+$signup-icon-bg: $white;
+//info text
+$signup-text-font-family: $font-adelle-bold;
+$signup-text-color: $primary;
+//$signup-text-font-size: 1.93rem;
+$signup-text-font-size: 1.5rem;
+$signup-text-line-height: 2.07rem;
+$signup-text-letter-spacing: -0.29px;
+//signup button
+$signup-btn-padd-x: 72px;
+$signup-btn-padd-y: 14px;
+$signup-btn-border-rad: 3px;
+$signup-btn-font-family: $font-proximanova-bold;
+$signup-btn-font-color: $white;
+$signup-btn-hover-font-color: $signup-btn-font-color;
+$signup-btn-font-size: 1.07rem;
+$signup-btn-line-height: 1.43rem;
+$signup-btn-letter-spacing: 0.15px;

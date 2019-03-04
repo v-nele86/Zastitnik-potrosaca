@@ -28,6 +28,7 @@ MAIN VARIABLES
 /**********NEWS SECTION**********/
 /**********COMMENTS SECTION**********/
 /**********LATEST SECTION**********/
+/**********SIGNUP SECTION**********/
 /*GENERAL STYLE*/
 html {
   font-size: 14px; }
@@ -673,5 +674,39 @@ header {
   .latest {
     padding-top: 72px !important;
     padding-bottom: 112px !important; } }
+/**********************SIGNUP SECTION GENERAL STYLE**********************/
+.signup {
+  background-color: #EAEAEA;
+  box-shadow: 0 15px 14px -10px rgba(88, 112, 148, 0.31); }
+  .signup .signup-info-icon .signup-info-icon-border {
+    background: #fff;
+    border-radius: 50%;
+    height: 92px;
+    width: 92px; }
+  .signup .signup-info-icon .fa-info-circle {
+    color: #E2322B;
+    font-size: 4.3rem;
+    line-height: 6.57rem; }
+  .signup .signup-info-text {
+    font-family: "Adelle-Bold";
+    font-size: 1.5rem;
+    color: #363739;
+    line-height: 2.07rem;
+    letter-spacing: -0.29px; }
+  .signup .signup-button .btn {
+    padding: 14px 72px;
+    border-radius: 3px;
+    font-family: "ProximaNova-Bold";
+    color: #fff;
+    font-size: 1.07rem;
+    line-height: 1.43rem;
+    letter-spacing: 0.15px; }
+    .signup .signup-button .btn:hover {
+      color: #fff; }
+
+/**********************SS BREAKPOINT**********************/
+@media (min-width: 992px) {
+  .signup {
+    padding: 26px 0 !important; } }
 
 /*# sourceMappingURL=theme.css.map */

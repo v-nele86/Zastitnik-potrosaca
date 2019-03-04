@@ -1,0 +1,50 @@
+
+/**********************SIGNUP SECTION GENERAL STYLE**********************/
+.signup{
+    background-color: $signup-section-bg;
+    box-shadow: $signup-section-box-shadow;
+    .signup-info-icon{
+        .signup-info-icon-border{
+            background: $signup-icon-bg;
+            border-radius: 50%;
+            height: 92px;
+            width: 92px;
+        }
+        .fa-info-circle{
+            color: $signup-icon-color;
+            font-size: 4.3rem;
+            line-height: 6.57rem;
+        }
+    }
+    .signup-info-text{
+        font-family: $signup-text-font-family;
+        font-size: $signup-text-font-size;
+        color: $signup-text-color;
+        line-height: $signup-text-line-height;
+        letter-spacing: $signup-text-letter-spacing;
+    }
+    .signup-button{
+        .btn{
+            padding: $signup-btn-padd-y $signup-btn-padd-x;
+            border-radius: $signup-btn-border-rad;
+            font-family: $signup-btn-font-family;
+            color: $signup-btn-font-color;
+            font-size: $signup-btn-font-size;
+            line-height: $signup-btn-line-height;
+            letter-spacing: $signup-btn-letter-spacing;
+            &:hover{
+                color: $signup-btn-hover-font-color;
+            }
+        }
+    }
+}
+
+
+
+
+/**********************SS BREAKPOINT**********************/
+@media(min-width: 992px){
+    .signup{
+        padding: $signup-section-padd-y-xl 0 !important;
+    }
+}
