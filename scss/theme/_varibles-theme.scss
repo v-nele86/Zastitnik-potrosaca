@@ -2,19 +2,21 @@
 /*****************************
 GENERAL VARIABLES
 *****************************/
+//fonts
 $font-ubuntu: 'Ubuntu', sans-serif;
 $font-adelle-bold: 'Adelle-Bold';
 $font-proximanova-regular: 'ProximaNova-Regular';
 $font-proximanova-bold: 'ProximaNova-Bold';
-
+//font color
 $font-color-body: #363739;
-
+//header bottom after
 $bottom-after-bg: $danger;
 $bottom-after-height: 3px;
 $bottom-after-width: 57px;
 $bottom-after-marg-top-mobile: 0.7rem;
 $bottom-after-marg-top-desk: 1rem;
-
+//headers
+$h1-font-size: 2.64rem;
 $h4-font-size: 1.43rem;
 
 /*****************************
@@ -22,15 +24,13 @@ HEADER VARIABLES
 *****************************/
 $header-bg-color: $white;
 $header-border-bottom-color: #EBEBEB;
-/*report button*/
+//report button
 $header-report-font-weight: bold;
 $header-report-color: #fff;
 $header-report-font-size: 0.7rem;
-
-/*navbar toggler*/
+//navbar toggler
 $header-navbar-toggler-border-color: $primary;
-
-/*navbar links style*/
+//navbar links style
 $header-link-text-align: center;
 //mobile sizes
 $header-link-color-mobile: $primary;
@@ -47,7 +47,7 @@ $header-link-color-desk: $primary;
 $header-link-font-family-desk: $font-proximanova-regular;
 $header-link-font-size-desk: 1.14rem;
 $header-link-spacing-desk: -0.17px;
-/*on lg breakpoint link-padding-x changed manually*/
+//on lg breakpoint link-padding-x changed manually
 $header-link-padding-x-desk: 1.14rem;
 $header-link-padding-y-desk: 0.5rem;
 $header-link-hover-color-desk: lighten($header-link-color-desk, 20%);
@@ -57,20 +57,105 @@ $header-link-active-weight-desk: bold;
 /*****************************
 MAIN VARIABLES
 *****************************/
-/*NEWS SECTION*/
+/**********NEWS SECTION**********/
 $news-picture-border-rad: 3px;
 $news-item-title-line-height: 1.93rem;
 $news-item-title-max-height: 5.79rem;
 $news-item-small-border-rad: 8px;
 $news-item-small-bg: #FFFFFF;
 
-/*COMMENTS SECTION*/
+/**********COMMENTS SECTION**********/
+//comments item
+$comments-item-border-rad: 3px;
+$comments-item-bg: #fff;
+$comments-item-box-shadow: 0 15px 14px -10px rgba(88,112,148,0.31);
+//&:after
+$comments-item-arrow-border-width: 12px;
+$comments-item-arrow-border-color: #fff;
+$comments-item-arrow-bottom-position: -24px;
+$comments-item-arrow-right-position: 24px;
 //comments title
 $comments-title-font-family: $font-proximanova-bold;
 $comments-title-font-size: 1.14rem;
 $comments-title-line-height: 1.36rem;
+//&fa-icon
+$comments-title-padd-left: 36px;
+$comments-title-faIcon-color: #9DC72D;
+$comments-title-faIcon-font-size: 1.5rem;
 //comments content
 $comments-content-font-family: $font-proximanova-regular;
 $comments-content-font-size: 0.93rem;
 $comments-content-line-height: 1.26rem;
 $comments-content-max-height: 2.52rem;
+
+/**********LATEST SECTION**********/
+$latest-section-padd-top-xl: 72px;
+$latest-section-padd-bottom-xl: 112px;
+//latest ahead
+$latest-ahead-margin-bottom-desk: 26px;
+//latest title
+$latest-title-letter-spacing: -0.49px;
+$latest-title-font-size-mobile: 2rem;
+$latest-title-line-height-mobile: 2.7rem;
+$latest-title-font-size-desk: $h1-font-size;
+$latest-title-line-height-desk: 3.71rem;
+//latest all
+$latest-all-font-family: $font-proximanova-bold;
+//$latest-all-font-color: $danger;
+$latest-all-font-size: 1.14rem;
+$latest-all-line-height: 1.43rem;
+$latest-all-letter-spacing: 0.16px;
+$latest-all-color: $danger;
+$latest-all-hover-color: darken($danger, 10%);
+//latest item - article
+$latest-item-border-rad: 8px;
+$latest-item-bg: #fff;
+$latest-item-box-shadow: 0 15px 14px -10px rgba(88,112,148,0.31);
+$latest-item-padd-x: 23px;
+//latest item content
+$latest-item-content-padd-y: 26px;
+$latest-item-content-border-bottom: 1px solid #EBEBEB;
+//latest item content pic - figure
+$latest-item-figure-margin-bottom: 19px;
+$latest-item-figure-border-rad: 3px;
+//latest item content description
+$latest-item-description-font-family: $font-ubuntu;
+$latest-item-description-font-weight: 400;
+$latest-item-description-font-color: #464646;
+$latest-item-description-line-height: 1.64rem;
+$latest-item-description-letter-spacing: -0.09px;
+$latest-item-description-height: 8.2rem;
+$latest-item-margin-bottom-mobile: 20px;
+$latest-item-margin-bottom-desk: 26px;
+//latest item info
+$latest-item-info-padd-top: 11px;
+$latest-item-info-padd-bottom: 17px;
+$latest-item-info-font-size: 0.86rem;
+$latest-item-info-line-height: 1.29rem;
+$latest-item-info-letter-spacing: 0.17px;
+$latest-item-info-date-color: #AFAFAF;
+$latest-item-info-comments-color: $danger;
+//banner style
+$banner-content-pic-margin-bottom: 11px;
+$banner-content-description-height: 4.92rem;
+//banner caption
+$banner-caption-padd-top: 39px;
+$banner-caption-padd-x: 12px;
+$banner-caption-padd-bottom: 11px;
+$banner-caption-border-rad: 3px;
+$banner-caption-bg: linear-gradient(180deg, rgba(97,97,99,0) 0%, #000000 100%); //transform: scaleY(-1); not apllied, instead changed from 0deg to 180deg
+//banner caption newspaper&time
+$banner-caption-newspaper0time-font-family: $font-ubuntu;
+$banner-caption-newspaper0time-font-weight: 500;
+$banner-caption-newspaper0time-font-size: 0.86rem;
+$banner-caption-newspaper0time-line-height: 1.14rem;
+$banner-caption-newspaper0time-letter-spacing: 0.05px;
+//banner caption comments
+$banner-caption-comments-img-scale: scale(0.7);
+$banner-caption-comments-number-position-top: 30%;
+$banner-caption-comments-translate-x: translateX(-50%);
+$banner-caption-comments-number-font-family: $font-ubuntu;
+$banner-caption-comments-number-font-weight: bold;
+$banner-caption-comments-number-font-color: $white;
+$banner-caption-comments-number-font-size: 0.5rem;
+$banner-caption-comments-number-line-height: 0.71rem;

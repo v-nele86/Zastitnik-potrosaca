@@ -1,34 +1,30 @@
 
 /**********************COMMENTS SECTION GENERAL STYLE**********************/
 .comments{
-    .comments-custom-padd{
-        padding-left: 5.5px !important;
-        padding-right: 5.5px !important;
-    }
     .comments-item{
         position: relative;
-        border-radius: 3px;
-        background-color: #FFFFFF;
-        box-shadow: 0 15px 14px -10px rgba(88,112,148,0.31);
+        border-radius: $comments-item-border-rad;
+        background-color: $comments-item-bg;
+        box-shadow: $comments-item-box-shadow;
         &:after{
             position: absolute;
             content: '';
             display: block;
-            border: 12px solid transparent;
-            border-top: 12px solid #fff;
-            bottom: -24px;
-            right: 24px;
+            border: $comments-item-arrow-border-width solid transparent;
+            border-top: $comments-item-arrow-border-width solid $comments-item-arrow-border-color;
+            bottom: $comments-item-arrow-bottom-position;
+            right: $comments-item-arrow-right-position;
         }
         .comments-title{
             font-family: $comments-title-font-family;
             font-size: $comments-title-font-size;
             line-height: $comments-title-line-height;
             position: relative;
-            padding-left: 36px;
+            padding-left: $comments-title-padd-left;
             .fa{
                 position: absolute;
-                color: #9DC72D;
-                font-size: 1.5rem;
+                color: $comments-title-faIcon-color;
+                font-size: $comments-title-faIcon-font-size;
                 left: 0;
             }
         }
@@ -41,3 +37,32 @@
         }
     }
 }
+
+/**********************SS BREAKPOINT**********************/
+@media(min-width: 450px){
+    .comments{
+        .comments-item{
+            width: 75%;
+/*            &:nth-of-type(odd){
+                margin-right: auto;
+                &:after{
+                left: 24px;
+                right: none;
+            }
+            }
+            &:nth-of-type(even){
+                margin-left: auto !important;
+            }*/
+        }
+    }
+}
+
+/**********************SM BREAKPOINT**********************/
+@media(min-width: 576px){
+    .comments{
+        .comments-item{
+            width: 100%;
+        }
+    }
+}
+

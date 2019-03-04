@@ -1,0 +1,172 @@
+
+/**********************LATEST SECTION GENERAL STYLE**********************/
+.latest{
+    .latest-ahead{
+        .latest-title{
+            letter-spacing: $latest-title-letter-spacing;
+            line-height: $latest-title-line-height-mobile;
+            font-size: $latest-title-font-size-mobile;
+        }
+        .latest-all{
+            font-family: $latest-all-font-family;
+            font-size: $latest-all-font-size;
+            line-height: $latest-all-line-height;
+            letter-spacing: $latest-all-letter-spacing;
+            a{
+                position: relative;
+                padding-right: 25px;
+                color: $latest-all-color !important;
+                &:hover{
+                    color: $latest-all-hover-color !important;
+                    .fa{
+                        color: $latest-all-hover-color !important;
+                    }
+                }
+                .fa{
+                    position: absolute;
+                    font-size: 2rem;
+                    right: 0;
+                    bottom: -3px;
+                    color: $latest-all-color !important;
+                }
+            }
+        }
+    }
+    .latest-item{
+        border-radius: $latest-item-border-rad;
+        background-color: $latest-item-bg;
+        box-shadow: $latest-item-box-shadow;
+        margin-bottom: $latest-item-margin-bottom-mobile;
+        .latest-item-content{
+            padding: $latest-item-content-padd-y $latest-item-padd-x;
+            border-bottom: $latest-item-content-border-bottom;
+            .latest-item-content-pic{
+                margin-bottom: $latest-item-figure-margin-bottom;
+                border-radius: $latest-item-figure-border-rad;
+            }
+            .latest-item-content-description{
+                font-family: $latest-item-description-font-family;
+                font-weight: $latest-item-description-font-weight;
+                color: $latest-item-description-font-color;
+                line-height: $latest-item-description-line-height;
+                letter-spacing: $latest-item-description-letter-spacing;
+                height: $latest-item-description-height;
+                overflow: hidden;
+            }
+        }
+        .latest-item-info{
+            padding: $latest-item-info-padd-top $latest-item-padd-x $latest-item-info-padd-bottom;
+            font-size: $latest-item-info-font-size;
+            line-height: $latest-item-info-line-height;
+            letter-spacing: $latest-item-info-letter-spacing;
+            
+            p:last-of-type{
+                margin-left: 12px;
+            }
+            .latest-item-info-date{
+                a{
+                    color: $latest-item-info-date-color !important;
+                }
+            }
+            .latest-item-info-comments{
+                a{
+                    color: $latest-item-info-comments-color;
+                    position: relative;
+                    padding-left: 20px;
+                    .fa{
+                        font-size: 1.2rem;
+                        position: absolute;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+    .banner{
+/*        .latest-item-info{
+            display: none !important;
+        }*/
+        .latest-item-content{
+            border-bottom: none;
+            .latest-item-content-pic{
+                margin-bottom: $banner-content-pic-margin-bottom;
+                position: relative;
+            }
+            .latest-item-content-description{
+                height: $banner-content-description-height !important;
+            }
+        }
+        .banner-pic-caption{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: $banner-caption-padd-top $banner-caption-padd-x $banner-caption-padd-bottom;
+            border-radius: $banner-caption-border-rad;
+            //transform: scaleY(-1); - not apllied, instead changed from 0deg to 180deg
+            background: $banner-caption-bg;
+            .banner-pic-caption-time a,
+            .banner-pic-caption-newspaper a{
+                font-family: $banner-caption-newspaper0time-font-family;
+                font-weight: $banner-caption-newspaper0time-font-weight;
+                font-size: $banner-caption-newspaper0time-font-size;
+                line-height: $banner-caption-newspaper0time-line-height;
+                letter-spacing: $banner-caption-newspaper0time-letter-spacing;
+            }
+            .banner-pic-caption-time a{
+                color: $danger;
+            }
+            .banner-pic-caption-newspaper a{
+                color: $white;
+            }
+            .banner-pic-caption-comments{
+                position: relative;
+                img{
+                    transform: $banner-caption-comments-img-scale;
+                }
+                .banner-pic-caption-comments-number{
+                    position: absolute;
+                    top: $banner-caption-comments-number-position-top;
+                    transform: $banner-caption-comments-translate-x;
+                    font-family: $banner-caption-comments-number-font-family;
+                    font-weight: $banner-caption-comments-number-font-weight;
+                    color: $banner-caption-comments-number-font-color;
+                    font-size: $banner-caption-comments-number-font-size;
+                    line-height: $banner-caption-comments-number-line-height;
+                }
+            }
+        }
+    }
+}
+
+/**********************SM BREAKPOINT**********************/
+@media(min-width: 576px){
+    .latest{
+    .latest-ahead{
+        .latest-title{
+            line-height: $latest-title-line-height-desk;
+            font-size: $latest-title-font-size-desk;
+            }
+        }
+    }
+}
+
+/**********************MD BREAKPOINT**********************/
+@media(min-width: 768px){
+    .latest{
+        .latest-ahead{
+            margin-bottom: $latest-ahead-margin-bottom-desk !important;
+        }
+        .latest-item{
+            margin-bottom: $latest-item-margin-bottom-desk;
+        }
+    }
+}
+
+/**********************LG BREAKPOINT**********************/
+@media(min-width: 992px){
+    .latest{
+        padding-top: $latest-section-padd-top-xl !important;
+        padding-bottom: $latest-section-padd-bottom-xl !important;
+    }
+}

@@ -3,9 +3,9 @@
 .news{
     .news-item-pic{
         border-radius: $news-picture-border-rad;
-        img{
+/*        img{
             transition: 0.5s linear;
-        }
+        }*/
     }
     .news-item-title{
         line-height: $news-item-title-line-height;

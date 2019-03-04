@@ -14,15 +14,23 @@ $(document).ready(function () {
     }
     
     //IMAGE ZOOM ANIMATION
-    
-        $('.news-item').mouseenter(function(){
-            $(this).find('.news-item-img').addClass('image-zoom');
+    if($('.zoom-holder').length > 0 && $('.zoom-to-get').length > 0){
+        $('.zoom-holder').mouseenter(function(){
+            $(this).find('.zoom-to-get').addClass('image-zoom');
         });
-        $('.news-item').mouseleave(function(){
-            $(this).find('.news-item-img').removeClass('image-zoom');
+        $('.zoom-holder').mouseleave(function(){
+            $(this).find('.zoom-to-get').removeClass('image-zoom');
         });
+    }
     
-    
+            
+    //BANNER SECTION
+//    if($('.banner').length > 0){
+//        $('.banner').find('.latest-item-content-pic').append('<div class="banner-pic-caption d-flex justify-content-between align-items-center"><span class="banner-pic-caption-time mr-2"><a href="#">10:34</a></span><span class="banner-pic-caption-newspaper text-uppercase mr-auto"><a href="#">POLITIKA</a></span><span class="banner-pic-caption-comments text-center"><a href="#"><img src="img/latest/banner_feedback.png" alt=""/></a><span class="banner-pic-caption-comments-number">12</span></span></div>');
+//        $('.banner').find('.latest-item-content').prepend('<figure class="latest-item-content-pic"><a href="#" class="img-holder size-banner"><img src="img/latest/logo_informer.png" alt="Logo Informer"></a></figure>')
+//
+//    }
+        
     
     //FILL ELEMENTS DEPENDS OF CATEGORY
     $('[data-category]').each(function () {
