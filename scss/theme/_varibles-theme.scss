@@ -57,6 +57,7 @@ $header-link-active-weight-desk: bold;
 /*****************************
 MAIN VARIABLES
 *****************************/
+
 /**********NEWS SECTION**********/
 $news-picture-border-rad: 3px;
 $news-item-title-line-height: 1.93rem;
@@ -184,3 +185,36 @@ $signup-btn-hover-font-color: $signup-btn-font-color;
 $signup-btn-font-size: 1.07rem;
 $signup-btn-line-height: 1.43rem;
 $signup-btn-letter-spacing: 0.15px;
+
+/*****************************
+FOOTER VARIABLES
+*****************************/
+//footer background through bootsrap class in html
+$footer-padd-top-mob: 25px;
+$footer-padd-bottom-mob: 20px;
+$footer-padd-top-desk: 42px;
+$footer-padd-bottom-desk: 34px;
+//footer navigation
+$footer-navigation-margin-bottom-desk: 33px;
+$footer-navlink-font-family: $font-proximanova-bold;
+$footer-navlink-font-color: $white;
+$footer-navlink-hover-font-color: darken($footer-navlink-font-color, 25%);
+$footer-navlink-font-size: 1rem;
+$footer-navlink-line-height: 1.21rem;
+$footer-navlink-letter-spacing: -0.15px;
+$footer-navlink-padd-y: 5px;
+$footer-navlink-padd-x: 15px;
+//footer-social
+$footer-sociallink-margin-x: 7px;
+$footer-social-fa-color: $white;
+$footer-social-fa-dimensions: 30px;
+$footer-social-facebook-bg: #3b5998;
+$footer-social-twitter-bg: #00acee;
+$footer-social-linkedin-bg: #0077B5;
+$footer-social-googleplus-bg: #DD4B39;
+//footer copyright
+$footer-copyright-font-color: $white;
+$footer-copyright-font-family: $font-proximanova-regular;
+$footer-copyright-font-size: 0.86rem;
+$footer-copyright-line-height: 1rem;
+$footer-copyright-letter-spacing: -0.13px;

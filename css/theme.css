@@ -29,6 +29,9 @@ MAIN VARIABLES
 /**********COMMENTS SECTION**********/
 /**********LATEST SECTION**********/
 /**********SIGNUP SECTION**********/
+/*****************************
+FOOTER VARIABLES
+*****************************/
 /*GENERAL STYLE*/
 html {
   font-size: 14px; }
@@ -40,7 +43,6 @@ body {
 
 img {
   max-width: 100%;
-  display: block;
   background-size: cover; }
 
 h1 {
@@ -704,9 +706,53 @@ header {
     .signup .signup-button .btn:hover {
       color: #fff; }
 
-/**********************SS BREAKPOINT**********************/
+/**********************LG BREAKPOINT**********************/
 @media (min-width: 992px) {
   .signup {
     padding: 26px 0 !important; } }
+/**********************SIGNUP SECTION GENERAL STYLE**********************/
+footer {
+  padding-bottom: 20px !important;
+  padding-top: 25px !important; }
+  footer .footer-navigation .footer-nav-list .footer-nav-link {
+    display: inline-block;
+    font-family: "ProximaNova-Bold";
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.21rem;
+    letter-spacing: -0.15px;
+    padding: 5px 15px; }
+    footer .footer-navigation .footer-nav-list .footer-nav-link:hover {
+      color: #bfbfbf; }
+  footer .footer-social .footer-social-link {
+    display: inline-block;
+    margin: 0 7px; }
+    footer .footer-social .footer-social-link .fa {
+      color: #fff;
+      height: 30px;
+      width: 30px;
+      line-height: 30px; }
+    footer .footer-social .footer-social-link .fa-facebook {
+      background: #3b5998; }
+    footer .footer-social .footer-social-link .fa-twitter {
+      background: #00acee; }
+    footer .footer-social .footer-social-link .fa-linkedin {
+      background: #0077B5; }
+    footer .footer-social .footer-social-link .fa-google-plus {
+      background: #DD4B39; }
+  footer .footer-copyright .footer-copyright-text {
+    color: #fff;
+    font-family: "ProximaNova-Regular";
+    font-size: 0.86rem;
+    letter-spacing: -0.13px;
+    line-height: 1rem; }
+
+/**********************LG BREAKPOINT**********************/
+@media (min-width: 992px) {
+  footer {
+    padding-bottom: 34px !important;
+    padding-top: 42px !important; }
+    footer .footer-navigation {
+      margin-bottom: 33px !important; } }
 
 /*# sourceMappingURL=theme.css.map */

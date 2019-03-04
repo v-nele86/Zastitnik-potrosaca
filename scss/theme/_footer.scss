@@ -1,2 +1,68 @@
 
+/**********************SIGNUP SECTION GENERAL STYLE**********************/
+footer{
+    padding-bottom: $footer-padd-bottom-mob !important;
+    padding-top: $footer-padd-top-mob !important;
+    .footer-navigation{
+        .footer-nav-list{
+            .footer-nav-link{
+                display: inline-block;
+                font-family: $footer-navlink-font-family;
+                color: $footer-navlink-font-color;
+                font-size: $footer-navlink-font-size;
+                line-height: $footer-navlink-line-height;
+                letter-spacing: $footer-navlink-letter-spacing;
+                padding: $footer-navlink-padd-y $footer-navlink-padd-x;
+                &:hover{
+                    color: $footer-navlink-hover-font-color;
+                }
+            }
+        }
+    }
+    .footer-social{
+        .footer-social-link{
+            display: inline-block;
+            margin: 0 $footer-sociallink-margin-x;
+            
+            .fa{
+                color: $footer-social-fa-color;
+                height: $footer-social-fa-dimensions;
+                width: $footer-social-fa-dimensions;
+                line-height: $footer-social-fa-dimensions;
+            }
+            .fa-facebook{
+                background: $footer-social-facebook-bg;
+            }
+            .fa-twitter{
+                background: $footer-social-twitter-bg;
+            }
+            .fa-linkedin{
+                background: $footer-social-linkedin-bg;
+            }
+            .fa-google-plus{
+                background: $footer-social-googleplus-bg;
+            }
+        }
+    }
+    .footer-copyright{
+        .footer-copyright-text{
+            color: $footer-copyright-font-color;
+            font-family: $footer-copyright-font-family;
+            font-size: $footer-copyright-font-size;
+            letter-spacing: $footer-copyright-letter-spacing;
+            line-height: $footer-copyright-line-height;
+        }
+    }
+}
 
+
+/**********************LG BREAKPOINT**********************/
+@media(min-width: 992px){
+    footer{
+        padding-bottom: $footer-padd-bottom-desk !important;
+        padding-top: $footer-padd-top-desk !important;
+        .footer-navigation{
+            margin-bottom: $footer-navigation-margin-bottom-desk !important;
+        }
+    }
+}
