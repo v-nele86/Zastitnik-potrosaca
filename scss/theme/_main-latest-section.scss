@@ -59,10 +59,6 @@
             font-size: $latest-item-info-font-size;
             line-height: $latest-item-info-line-height;
             letter-spacing: $latest-item-info-letter-spacing;
-            
-            p:last-of-type{
-                margin-left: 12px;
-            }
             .latest-item-info-date{
                 a{
                     color: $latest-item-info-date-color !important;
@@ -159,6 +155,11 @@
         }
         .latest-item{
             margin-bottom: $latest-item-margin-bottom-desk;
+            .latest-item-info{
+                p:last-of-type{
+                margin-left: 12px;
+                }
+            }
         }
     }
 }

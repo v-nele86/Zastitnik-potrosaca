@@ -604,8 +604,6 @@ header {
     font-size: 0.86rem;
     line-height: 1.29rem;
     letter-spacing: 0.17px; }
-    .latest .latest-item .latest-item-info p:last-of-type {
-      margin-left: 12px; }
     .latest .latest-item .latest-item-info .latest-item-info-date a {
       color: #AFAFAF !important; }
     .latest .latest-item .latest-item-info .latest-item-info-comments a {
@@ -670,7 +668,9 @@ header {
   .latest .latest-ahead {
     margin-bottom: 26px !important; }
   .latest .latest-item {
-    margin-bottom: 26px; } }
+    margin-bottom: 26px; }
+    .latest .latest-item .latest-item-info p:last-of-type {
+      margin-left: 12px; } }
 /**********************LG BREAKPOINT**********************/
 @media (min-width: 992px) {
   .latest {
