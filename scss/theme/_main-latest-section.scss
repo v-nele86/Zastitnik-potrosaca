@@ -60,9 +60,7 @@
             line-height: $latest-item-info-line-height;
             letter-spacing: $latest-item-info-letter-spacing;
             .latest-item-info-date{
-                a{
-                    color: $latest-item-info-date-color !important;
-                }
+                color: $latest-item-info-date-color;
             }
             .latest-item-info-comments{
                 a{
@@ -101,18 +99,18 @@
             border-radius: $banner-caption-border-rad;
             //transform: scaleY(-1); - not apllied, instead changed from 0deg to 180deg
             background: $banner-caption-bg;
-            .banner-pic-caption-time a,
-            .banner-pic-caption-newspaper a{
+            .banner-pic-caption-time,
+            .banner-pic-caption-newspaper{
                 font-family: $banner-caption-newspaper0time-font-family;
                 font-weight: $banner-caption-newspaper0time-font-weight;
                 font-size: $banner-caption-newspaper0time-font-size;
                 line-height: $banner-caption-newspaper0time-line-height;
                 letter-spacing: $banner-caption-newspaper0time-letter-spacing;
             }
-            .banner-pic-caption-time a{
+            .banner-pic-caption-time{
                 color: $danger;
             }
-            .banner-pic-caption-newspaper a{
+            .banner-pic-caption-newspaper{
                 color: $white;
             }
             .banner-pic-caption-comments{
@@ -122,6 +120,7 @@
                 }
                 .banner-pic-caption-comments-number{
                     position: absolute;
+                    left: $banner-caption-comments-number-position-left;
                     top: $banner-caption-comments-number-position-top;
                     transform: $banner-caption-comments-translate-x;
                     font-family: $banner-caption-comments-number-font-family;
@@ -155,11 +154,6 @@
         }
         .latest-item{
             margin-bottom: $latest-item-margin-bottom-desk;
-            .latest-item-info{
-                p:last-of-type{
-                margin-left: 12px;
-                }
-            }
         }
     }
 }

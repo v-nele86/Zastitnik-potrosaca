@@ -80,14 +80,13 @@ $comments-title-font-family: $font-proximanova-bold;
 $comments-title-font-size: 1.14rem;
 $comments-title-line-height: 1.36rem;
 //&fa-icon
-$comments-title-padd-left: 36px;
-$comments-title-faIcon-color: #9DC72D;
-$comments-title-faIcon-font-size: 1.5rem;
+//$comments-title-padd-left: 36px;
+//$comments-title-faIcon-color: #9DC72D;
+//$comments-title-faIcon-font-size: 1.5rem;
 //comments content
 $comments-content-font-family: $font-proximanova-regular;
 $comments-content-font-size: 0.93rem;
 $comments-content-line-height: 1.26rem;
-$comments-content-max-height: 2.52rem;
 
 /**********LATEST SECTION**********/
 $latest-section-padd-top-xl: 72px;
@@ -153,7 +152,8 @@ $banner-caption-newspaper0time-line-height: 1.14rem;
 $banner-caption-newspaper0time-letter-spacing: 0.05px;
 //banner caption comments
 $banner-caption-comments-img-scale: scale(0.7);
-$banner-caption-comments-number-position-top: 30%;
+$banner-caption-comments-number-position-left: 50%;
+$banner-caption-comments-number-position-top: 27%;
 $banner-caption-comments-translate-x: translateX(-50%);
 $banner-caption-comments-number-font-family: $font-ubuntu;
 $banner-caption-comments-number-font-weight: bold;
@@ -218,3 +218,84 @@ $footer-copyright-font-family: $font-proximanova-regular;
 $footer-copyright-font-size: 0.86rem;
 $footer-copyright-line-height: 1rem;
 $footer-copyright-letter-spacing: -0.13px;
+
+/*****************************
+SINGLE-PAGE VARIABLES
+*****************************/
+$single-news-page-padd-top: 60px;
+$single-news-page-padd-bottom: 87px;
+//single-news item info
+$single-news-item-info-font-size: 0.86rem;
+$single-news-item-info-line-height: 1.29rem;
+$single-news-item-info-letter-spacing: 0.17px;
+$single-news-item-info-date-color: #AFAFAF;
+$single-news-item-info-comments-color: $danger;
+$single-news-item-info-elements-margin: 25px;
+//single-news title
+$single-news-title-wrapper-margin-bottom: 26px;
+$single-news-title-letter-spacing: -0.49px;
+$single-news-title-font-size-mobile: 2rem;
+$single-news-title-line-height-mobile: 2.7rem;
+$single-news-title-font-size-desk: $h1-font-size;
+$single-news-title-line-height-desk: 3.71rem;
+//single-news item description
+//font-family & font-weight allready inherited from body
+$single-news-description-font-color: #464646;
+$single-news-description-font-size: 1.43rem;
+$single-news-description-line-height: 1.79rem;
+$single-news-description-letter-spacing: -0.09px;
+$single-news-description-margin-bottom: 27px;
+//single-news item content
+$single-news-item-content-letter-spacing: -0.17px;
+//single news form title
+$single-news-title-line-height: 27px;
+$single-news-title-letter-spacing: -0.22px;
+//single-news all comments
+$single-news-all-font-family: $latest-all-font-family;
+$single-news-all-font-size: $latest-all-font-size;
+$single-news-all-line-height: $latest-all-line-height;
+$single-news-all-letter-spacing: $latest-all-letter-spacing;
+$single-news-all-color: $latest-all-color;
+$single-news-all-hover-color: $latest-all-hover-color;
+//single-news form
+$single-news-form-margin-bottom: 25px;
+//single-news form item
+$single-news-form-item-font-family: $font-proximanova-regular;
+$single-news-form-item-font-color: #333333;
+$single-news-form-item-font-size: 1.14rem;
+$single-news-form-item-line-height: 1.14rem;
+$single-news-form-item-letter-spacing: 0.06px;
+//single-news form inputs
+$single-news-form-item-textarea-height: 19.35rem;
+$single-news-form-item-textarea-line-height: 1.29rem;
+//single-news form check
+$single-news-form-answer-height: 47px;
+$single-news-form-answer-width: 104px;
+//single-news comments item
+$single-news-comments-item-margin-bottom: 18px;
+$single-news-comments-item-border-radius: 8px;
+$single-news-comments-item-bg-color: $white;
+$single-news-comments-item-box-shadow: 0 15px 14px -10px rgba(88,112,148,0.31);
+//single-news comments user
+$single-news-comments-user-name-font-family: $font-ubuntu;
+$single-news-comments-user-name-font-weight: $font-weight-bold;
+$single-news-comments-user-name-font-color: #161616;
+$single-news-comments-user-name-font-size: 0.86rem;
+$single-news-comments-user-name-line-height: 1.07rem;
+$single-news-comments-user-name-letter-spacing: 0.26px;
+//single-news comments date
+$single-news-comments-user-date-font-size: 0.71rem;
+$single-news-comments-user-date-line-height: $latest-item-info-line-height;
+$single-news-comments-user-date-letter-spacing: 0.14px;
+$single-news-comments-user-date-color: $latest-item-info-date-color;
+$single-news-comments-user-date-font-family: $latest-item-description-font-family;
+$single-news-comments-user-date-font-weight: $latest-item-description-font-weight;
+//single-news comments content
+//font-family, weight & color inherited from body
+$single-news-comments-content-font-size: 0.86rem;
+$single-news-comments-content-line-height: 1.21rem;
+$single-news-comments-content-letter-spacing: -0.15px;
+//single news all comments
+$single-news-all-comments-margin-top: 31px;
+$single-news-all-comments-color: $primary;
+$single-news-all-comments-hover-color: lighten($single-news-all-comments-color, 20%);

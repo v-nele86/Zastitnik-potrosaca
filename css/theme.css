@@ -32,6 +32,9 @@ MAIN VARIABLES
 /*****************************
 FOOTER VARIABLES
 *****************************/
+/*****************************
+SINGLE-PAGE VARIABLES
+*****************************/
 /*GENERAL STYLE*/
 html {
   font-size: 14px; }
@@ -524,19 +527,19 @@ header {
     font-family: "ProximaNova-Bold";
     font-size: 1.14rem;
     line-height: 1.36rem;
-    position: relative;
-    padding-left: 36px; }
-    .comments .comments-item .comments-title .fa {
-      position: absolute;
-      color: #9DC72D;
-      font-size: 1.5rem;
-      left: 0; }
+    /*            .fa{
+                    position: absolute;
+                    color: $comments-title-faIcon-color;
+                    font-size: $comments-title-faIcon-font-size;
+                    left: 0;
+                }*/ }
+    .comments .comments-item .comments-title:before {
+      content: '&rdquo;';
+      color: #9DC72D; }
   .comments .comments-item .comments-content {
     font-family: "ProximaNova-Regular";
     font-size: 0.93rem;
-    line-height: 1.26rem;
-    max-height: 2.52rem;
-    overflow: hidden; }
+    line-height: 1.26rem; }
 
 /**********************SS BREAKPOINT**********************/
 @media (min-width: 450px) {
@@ -604,8 +607,8 @@ header {
     font-size: 0.86rem;
     line-height: 1.29rem;
     letter-spacing: 0.17px; }
-    .latest .latest-item .latest-item-info .latest-item-info-date a {
-      color: #AFAFAF !important; }
+    .latest .latest-item .latest-item-info .latest-item-info-date {
+      color: #AFAFAF; }
     .latest .latest-item .latest-item-info .latest-item-info-comments a {
       color: #E2322B;
       position: relative;
@@ -633,16 +636,16 @@ header {
     padding: 39px 12px 11px;
     border-radius: 3px;
     background: linear-gradient(180deg, rgba(97, 97, 99, 0) 0%, #000000 100%); }
-    .latest .banner .banner-pic-caption .banner-pic-caption-time a,
-    .latest .banner .banner-pic-caption .banner-pic-caption-newspaper a {
+    .latest .banner .banner-pic-caption .banner-pic-caption-time,
+    .latest .banner .banner-pic-caption .banner-pic-caption-newspaper {
       font-family: "Ubuntu", sans-serif;
       font-weight: 500;
       font-size: 0.86rem;
       line-height: 1.14rem;
       letter-spacing: 0.05px; }
-    .latest .banner .banner-pic-caption .banner-pic-caption-time a {
+    .latest .banner .banner-pic-caption .banner-pic-caption-time {
       color: #E2322B; }
-    .latest .banner .banner-pic-caption .banner-pic-caption-newspaper a {
+    .latest .banner .banner-pic-caption .banner-pic-caption-newspaper {
       color: #fff; }
     .latest .banner .banner-pic-caption .banner-pic-caption-comments {
       position: relative; }
@@ -650,7 +653,8 @@ header {
         transform: scale(0.7); }
       .latest .banner .banner-pic-caption .banner-pic-caption-comments .banner-pic-caption-comments-number {
         position: absolute;
-        top: 30%;
+        left: 50%;
+        top: 27%;
         transform: translateX(-50%);
         font-family: "Ubuntu", sans-serif;
         font-weight: bold;
@@ -668,9 +672,7 @@ header {
   .latest .latest-ahead {
     margin-bottom: 26px !important; }
   .latest .latest-item {
-    margin-bottom: 26px; }
-    .latest .latest-item .latest-item-info p:last-of-type {
-      margin-left: 12px; } }
+    margin-bottom: 26px; } }
 /**********************LG BREAKPOINT**********************/
 @media (min-width: 992px) {
   .latest {
@@ -710,6 +712,171 @@ header {
 @media (min-width: 992px) {
   .signup {
     padding: 26px 0 !important; } }
+/**********************LATEST SECTION GENERAL STYLE**********************/
+/*NO SPECIAL STYLE NEEDED, 
+CHANGES IN COMPARISON TO LATEST-SECTION MADE IN HTML THROUGH BOOTRSTAP CLASSES*/
+/**********************LATEST SECTION GENERAL STYLE**********************/
+.single-news-page-section .single-news-all-comments {
+  font-family: "ProximaNova-Bold";
+  font-size: 1.14rem;
+  line-height: 1.43rem;
+  letter-spacing: 0.16px; }
+  .single-news-page-section .single-news-all-comments a {
+    position: relative;
+    padding-right: 25px;
+    color: #E2322B !important; }
+    .single-news-page-section .single-news-all-comments a:hover {
+      color: #c0211a !important; }
+      .single-news-page-section .single-news-all-comments a:hover .fa {
+        color: #c0211a !important; }
+    .single-news-page-section .single-news-all-comments a .fa {
+      position: absolute;
+      font-size: 2rem;
+      right: 0;
+      bottom: -3px;
+      color: #E2322B !important; }
+.single-news-page-section .single-news-header {
+  border-bottom: 1px solid #EBEBEB; }
+  .single-news-page-section .single-news-header .single-news-item-info {
+    font-size: 0.86rem;
+    line-height: 1.29rem;
+    letter-spacing: 0.17px; }
+    .single-news-page-section .single-news-header .single-news-item-info .single-news-item-info-date {
+      color: #AFAFAF; }
+    .single-news-page-section .single-news-header .single-news-item-info .single-news-item-info-comments a {
+      color: #E2322B;
+      position: relative;
+      padding-left: 20px; }
+      .single-news-page-section .single-news-header .single-news-item-info .single-news-item-info-comments a .fa {
+        font-size: 1.2rem;
+        position: absolute;
+        left: 0; }
+  .single-news-page-section .single-news-header .single-news-item-title {
+    letter-spacing: -0.22px;
+    line-height: 2.7rem;
+    font-size: 2rem; }
+  .single-news-page-section .single-news-header .single-news-item-description {
+    color: #464646;
+    font-size: 1.43rem;
+    line-height: 1.79rem;
+    letter-spacing: -0.09px;
+    margin-bottom: 27px; }
+.single-news-page-section .single-news-item-content p {
+  letter-spacing: -0.17px; }
+.single-news-page-section .single-news-form {
+  margin-bottom: 25px; }
+  .single-news-page-section .single-news-form .single-news-form-ahead .single-news-form-title {
+    line-height: 27px;
+    letter-spacing: -0.22px; }
+  .single-news-page-section .single-news-form .single-news-form-item {
+    font-family: "ProximaNova-Regular";
+    color: #333333;
+    font-size: 1.14rem;
+    line-height: 1.14rem;
+    letter-spacing: 0.06px; }
+    .single-news-page-section .single-news-form .single-news-form-item input,
+    .single-news-page-section .single-news-form .single-news-form-item textarea {
+      border: none;
+      background-color: #fff;
+      border-radius: 3px; }
+    .single-news-page-section .single-news-form .single-news-form-item textarea {
+      height: 19.35rem;
+      line-height: 1.29rem; }
+    .single-news-page-section .single-news-form .single-news-form-item .single-news-form-check-answer {
+      height: 47px;
+      width: 104px; }
+    .single-news-page-section .single-news-form .single-news-form-item .single-news-form-btn {
+      font-family: "Ubuntu", sans-serif;
+      font-weight: bold;
+      font-size: 1rem;
+      line-height: 1.36rem;
+      letter-spacing: 0.17px;
+      border-radius: 3px;
+      padding: 13px 18px; }
+.single-news-page-section .single-news-comments {
+  /*        .latest-all{
+              font-family: $latest-all-font-family;
+              font-size: $latest-all-font-size;
+              line-height: $latest-all-line-height;
+              letter-spacing: $latest-all-letter-spacing;
+              a{
+                  position: relative;
+                  padding-right: 25px;
+                  color: $latest-all-color !important;
+                  &:hover{
+                      color: $latest-all-hover-color !important;
+                      .fa{
+                          color: $latest-all-hover-color !important;
+                      }
+                  }
+                  .fa{
+                      position: absolute;
+                      font-size: 2rem;
+                      right: 0;
+                      bottom: -3px;
+                      color: $latest-all-color !important;
+                  }
+              }
+          }*/ }
+  .single-news-page-section .single-news-comments .single-news-comments-item {
+    margin-bottom: 18px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 15px 14px -10px rgba(88, 112, 148, 0.31); }
+    .single-news-page-section .single-news-comments .single-news-comments-item:last-of-type {
+      margin-bottom: 31px; }
+    .single-news-page-section .single-news-comments .single-news-comments-item .single-news-comments-user-pic {
+      height: 45px;
+      width: 45px;
+      border-radius: 50%; }
+    .single-news-page-section .single-news-comments .single-news-comments-item .single-news-comments-user-name {
+      font-family: "Ubuntu", sans-serif;
+      font-weight: 700;
+      color: #161616;
+      font-size: 0.86rem;
+      line-height: 1.07rem;
+      letter-spacing: 0.26px; }
+    .single-news-page-section .single-news-comments .single-news-comments-item .single-news-comments-user-date {
+      font-size: 0.71rem;
+      color: #AFAFAF;
+      letter-spacing: 0.14px;
+      line-height: 1.29rem; }
+    .single-news-page-section .single-news-comments .single-news-comments-item .single-news-comments-content {
+      font-size: 0.86rem;
+      line-height: 1.21rem;
+      letter-spacing: -0.15px; }
+  .single-news-page-section .single-news-comments .single-news-all-comments a {
+    color: #363739 !important; }
+    .single-news-page-section .single-news-comments .single-news-all-comments a:hover {
+      color: #686a6d !important; }
+      .single-news-page-section .single-news-comments .single-news-all-comments a:hover .fa {
+        color: #686a6d !important; }
+    .single-news-page-section .single-news-comments .single-news-all-comments a .fa {
+      color: #363739 !important; }
+
+/**********************SS BREAKPOINT**********************/
+@media (min-width: 450px) {
+  .single-news-page-section .single-news-header .single-news-item-info .single-news-item-info-date,
+  .single-news-page-section .single-news-header .single-news-item-info .single-news-item-info-author {
+    margin-right: 25px !important; } }
+/**********************SM BREAKPOINT**********************/
+@media (min-width: 576px) {
+  .single-news-page-section .single-news-header .single-news-item-title {
+    line-height: 3.71rem;
+    font-size: 2.64rem; }
+  .single-news-page-section .single-news-item-title-wrapper {
+    margin-bottom: 26px !important; } }
+/**********************MD BREAKPOINT**********************/
+@media (min-width: 768px) {
+  .single-news-page-section .single-news-form .single-news-form-ahead {
+    margin-bottom: 35px !important; } }
+/**********************LG BREAKPOINT**********************/
+@media (min-width: 992px) {
+  .single-news-page-wrapper {
+    padding: 60px 0 87px !important; }
+
+  .single-news-page-section .single-news-item {
+    margin-bottom: 26px !important; } }
 /**********************SIGNUP SECTION GENERAL STYLE**********************/
 footer {
   padding-bottom: 20px !important;

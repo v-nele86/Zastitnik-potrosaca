@@ -1,0 +1,253 @@
+
+/**********************LATEST SECTION GENERAL STYLE**********************/
+.single-news-page-section{
+    
+    .single-news-all-comments{
+        font-family: $single-news-all-font-family;
+        font-size: $single-news-all-font-size;
+        line-height: $single-news-all-line-height;
+        letter-spacing: $single-news-all-letter-spacing;
+        a{
+            position: relative;
+            padding-right: 25px;
+            color: $single-news-all-color !important;
+            &:hover{
+                color: $single-news-all-hover-color !important;
+                .fa{
+                    color: $single-news-all-hover-color !important;
+                }
+            }
+            .fa{
+                position: absolute;
+                font-size: 2rem;
+                right: 0;
+                bottom: -3px;
+                color: $single-news-all-color !important;
+            }
+        }
+    }
+    
+    .single-news-header{
+        border-bottom: 1px solid #EBEBEB;
+        .single-news-item-info{
+            font-size: $single-news-item-info-font-size;
+            line-height: $single-news-item-info-line-height;
+            letter-spacing: $single-news-item-info-letter-spacing;
+            .single-news-item-info-date{
+                color: $single-news-item-info-date-color;
+            }
+            .single-news-item-info-comments{
+                a{
+                    color: $single-news-item-info-comments-color;
+                    position: relative;
+                    padding-left: 20px;
+                    .fa{
+                        font-size: 1.2rem;
+                        position: absolute;
+                        left: 0;
+                    }
+                }
+            }
+        }
+        .single-news-item-title{
+            letter-spacing: $single-news-title-letter-spacing;
+            line-height: $single-news-title-line-height-mobile;
+            font-size: $single-news-title-font-size-mobile;
+        }
+        .single-news-item-description{
+            //font-family & font-weight allready inherited from body
+            color: $single-news-description-font-color;
+            font-size: $single-news-description-font-size;
+            line-height: $single-news-description-line-height;
+            letter-spacing: $single-news-description-letter-spacing;
+            margin-bottom: $single-news-description-margin-bottom;
+        }
+    }
+    .single-news-item-content p{
+        letter-spacing: $single-news-item-content-letter-spacing;
+    }
+    
+    
+    
+    .single-news-form{
+        margin-bottom: $single-news-form-margin-bottom;
+        
+        .single-news-form-ahead{
+            .single-news-form-title{
+                //color, font-family, weight & size inherited
+                line-height: $single-news-title-line-height;
+                letter-spacing: $single-news-title-letter-spacing;
+            }
+            
+        }
+        .single-news-form-item{
+            font-family: $single-news-form-item-font-family;
+            color: $single-news-form-item-font-color;
+            font-size: $single-news-form-item-font-size;
+            line-height: $single-news-form-item-line-height;
+            letter-spacing: $single-news-form-item-letter-spacing;
+            input,
+            textarea{
+                border: none;
+                background-color: #fff;
+                border-radius: 3px;
+            }
+            textarea{
+                height: $single-news-form-item-textarea-height;
+                line-height: 1.29rem;
+            }
+            .single-news-form-check-answer{
+                height: $single-news-form-answer-height;
+                width: $single-news-form-answer-width;
+            }
+            .single-news-form-btn{
+                font-family: $font-ubuntu;
+                font-weight: bold;
+                font-size: 1rem;
+                line-height: 1.36rem;
+                letter-spacing: 0.17px;
+                border-radius: 3px;
+                padding: 13px 18px;
+            }
+        }
+    }
+    
+    .single-news-comments{
+        .single-news-comments-item{
+            margin-bottom: $single-news-comments-item-margin-bottom;
+            border-radius: $single-news-comments-item-border-radius;
+            background-color: $single-news-comments-item-bg-color;
+            box-shadow: $single-news-comments-item-box-shadow;
+            &:last-of-type{
+                margin-bottom: $single-news-all-comments-margin-top;
+            }
+            
+            .single-news-comments-user-pic{
+                height: 45px;
+                width: 45px;
+                border-radius: 50%;
+            }
+            
+            .single-news-comments-user-name{
+                font-family: $single-news-comments-user-name-font-family;
+                font-weight: $single-news-comments-user-name-font-weight;
+                color: $single-news-comments-user-name-font-color;
+                font-size: $single-news-comments-user-name-font-size;
+                line-height: $single-news-comments-user-name-line-height;
+                letter-spacing: $single-news-comments-user-name-letter-spacing;
+            }
+            
+            .single-news-comments-user-date{
+                font-size: $single-news-comments-user-date-font-size;
+                color: $single-news-comments-user-date-color;
+                letter-spacing: $single-news-comments-user-date-letter-spacing;
+                line-height: $single-news-comments-user-date-line-height;
+            }
+            
+            .single-news-comments-content{
+                font-size: $single-news-comments-content-font-size;
+                line-height: $single-news-comments-content-line-height;
+                letter-spacing: $single-news-comments-content-letter-spacing;
+            }
+        }
+        
+        .single-news-all-comments{
+            a{
+            color: $single-news-all-comments-color !important;
+            &:hover{
+                color: $single-news-all-comments-hover-color !important;
+                .fa{
+                    color: $single-news-all-comments-hover-color !important;
+                }
+            }
+            .fa{
+                color: $single-news-all-comments-color !important;
+            }
+        }
+        }
+        
+/*        .latest-all{
+            font-family: $latest-all-font-family;
+            font-size: $latest-all-font-size;
+            line-height: $latest-all-line-height;
+            letter-spacing: $latest-all-letter-spacing;
+            a{
+                position: relative;
+                padding-right: 25px;
+                color: $latest-all-color !important;
+                &:hover{
+                    color: $latest-all-hover-color !important;
+                    .fa{
+                        color: $latest-all-hover-color !important;
+                    }
+                }
+                .fa{
+                    position: absolute;
+                    font-size: 2rem;
+                    right: 0;
+                    bottom: -3px;
+                    color: $latest-all-color !important;
+                }
+            }
+        }*/
+    }
+}
+
+/**********************SS BREAKPOINT**********************/
+@media(min-width: 450px){
+    .single-news-page-section{
+        .single-news-header{
+            .single-news-item-info{
+                .single-news-item-info-date,
+                .single-news-item-info-author{
+                    margin-right: $single-news-item-info-elements-margin !important;
+                }
+            }
+        }
+    }
+    
+}
+
+/**********************SM BREAKPOINT**********************/
+@media(min-width: 576px){
+    .single-news-page-section{
+        .single-news-header{
+            .single-news-item-title{
+                line-height: $single-news-title-line-height-desk;
+                font-size: $single-news-title-font-size-desk;
+            }
+        }
+        .single-news-item-title-wrapper{
+            margin-bottom: $single-news-title-wrapper-margin-bottom !important;
+        }
+    }
+}
+
+/**********************MD BREAKPOINT**********************/
+@media(min-width: 768px){
+    .single-news-page-section{
+        .single-news-form{
+            .single-news-form-ahead{
+                margin-bottom: 35px !important;
+            }
+        }
+    }
+}
+
+/**********************LG BREAKPOINT**********************/
+@media(min-width: 992px){
+    .single-news-page-wrapper{
+        padding: $single-news-page-padd-top 0 $single-news-page-padd-bottom !important;
+    }
+    .single-news-page-section{
+        .single-news-item{
+            margin-bottom: 26px !important;
+        }
+        .single-news-comments{
+            .single-news-comments-item{
+                
+            }
+        }
+    }
+    
+}
