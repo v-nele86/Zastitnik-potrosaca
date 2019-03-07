@@ -304,7 +304,19 @@ $single-news-all-comments-hover-color: lighten($single-news-all-comments-color, 
 /*****************************
 ABOUT-PAGE VARIABLES
 *****************************/
-
+$about-page-padd-top-desk: 60px;
+$about-page-padd-bottom-desk: 85px;
+$about-page-pic-border-rad: 3px;
+$about-page-pic-bg-color: $white;
+$about-page-pic-margin-bottom-desk: 31px;
+//about-page-description font family & weight inherited from body, other properties shares with .single-news-description
+$about-page-description-margin-bottom-desk: $single-news-description-margin-bottom;
+$about-page-description-font-color: $single-news-description-font-color;
+$about-page-description-font-size: $single-news-description-font-size;
+$about-page-description-line-height: $single-news-description-line-height;
+$about-page-description-letter-spacing: $single-news-description-letter-spacing;
+//about-page-content font family & weight & size & line-height inherited from body, letter-spacing shares with .single-news-content
+$about-page-content-letter-spacing: $single-news-item-content-letter-spacing;
 
 /*****************************
 CONTACT-PAGE VARIABLES

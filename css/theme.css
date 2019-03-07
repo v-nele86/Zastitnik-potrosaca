@@ -718,10 +718,10 @@ header {
 @media (min-width: 992px) {
   .signup {
     padding: 26px 0 !important; } }
-/**********************LATEST SECTION GENERAL STYLE**********************/
+/**********************CATEGORY PAGE GENERAL STYLE**********************/
 /*NO SPECIAL STYLE NEEDED, 
 CHANGES IN COMPARISON TO LATEST-SECTION MADE IN HTML THROUGH BOOTRSTAP CLASSES*/
-/**********************LATEST SECTION GENERAL STYLE**********************/
+/**********************SINGLE-NEWS PAGE GENERAL STYLE**********************/
 .single-news-page-section .single-news-all-comments {
   font-family: "ProximaNova-Bold";
   font-size: 1.14rem;
@@ -868,6 +868,31 @@ CHANGES IN COMPARISON TO LATEST-SECTION MADE IN HTML THROUGH BOOTRSTAP CLASSES*/
 
   .single-news-page-section .single-news-item {
     margin-bottom: 26px !important; } }
+/**********************ABOUT PAGE GENERAL STYLE**********************/
+.about-page .about-page-pic {
+  border-radius: 3px;
+  background-color: #fff; }
+.about-page .about-page-description {
+  color: #464646;
+  font-size: 1.43rem;
+  letter-spacing: -0.09px;
+  line-height: 1.79rem; }
+.about-page .about-page-content {
+  letter-spacing: -0.17px; }
+
+/**********************MD BREAKPOINT**********************/
+@media (min-width: 768px) {
+  .about-page .about-page-item {
+    width: 67%; } }
+/**********************LG BREAKPOINT**********************/
+@media (min-width: 992px) {
+  .about-page {
+    padding-top: 60px;
+    padding-bottom: 85px; }
+    .about-page .about-page-pic {
+      margin-bottom: 31px !important; }
+    .about-page .about-page-description {
+      margin-bottom: 27px !important; } }
 /**********************SIGNUP SECTION GENERAL STYLE**********************/
 footer {
   padding-bottom: 20px !important;
