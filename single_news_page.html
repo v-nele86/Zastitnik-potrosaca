@@ -219,18 +219,21 @@ and open the template in the editor.
                                                 <div class="form-group">
                                                     <label for="form-name">Ime*</label>
                                                     <input class="single-news-form-name form-control" type="text" name="name" value="" id="form-name">
+                                                    <div class="error-msg"></div>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="form-group">
                                                     <label for="form-email">Email*</label>
                                                     <input class="single-news-form-email form-control" type="email" name="email" value="" id="form-email">
+                                                    <div class="error-msg"></div>
                                                 </div>
                                             </div>
                                             <div class="col-12 mb-4">
                                                 <div class="form-group">
                                                     <label for="form-comment">Komentar</label>
                                                     <textarea class="single-news-form-comment w-100 p-2" id="form-comment"></textarea>
+                                                    <div class="error-msg"></div>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 align-self-end">
@@ -405,12 +408,171 @@ and open the template in the editor.
                         </div>
 
 
-
+                        <!------------------------SINGLE-NEWS ASIDE START------------------------>
                         <div class="col-md-4">
-                            <aside class="single-news-page-aside">
-
+                            <aside class="single-news-page-aside latest">
+                                <!--Banner start-->
+                                <article class="latest-item banner zoom-holder">
+                                    <!--Item content-->
+                                    <div class="latest-item-content">
+                                        <!--Banner picture-->
+                                        <figure class="latest-item-content-pic">
+                                            <a href="#" class="img-holder size-banner">
+                                                <img src="img/latest/logo_informer.png" alt="Logo Informer">
+                                            </a>
+                                        </figure>
+                                        <!--Content picture-->
+                                        <figure class="latest-item-content-pic">
+                                            <a href="#" class="img-holder size-project">
+                                                <img class="zoom-to-get" src="img/latest/latest_section_banner_pic.png" alt="Banner slika"/>
+                                            </a>
+                                            <!--Banner picture caption-->
+                                            <div class="banner-pic-caption d-flex justify-content-between align-items-center">
+                                                <span class="banner-pic-caption-time mr-2">
+                                                    10:34
+                                                </span>
+                                                <span class="banner-pic-caption-newspaper text-uppercase mr-auto">
+                                                    POLITIKA
+                                                </span>
+                                                <span class="banner-pic-caption-comments text-center">
+                                                    <img src="img/latest/banner_feedback.png" alt=""/>
+                                                    <span class="banner-pic-caption-comments-number">12</span>
+                                                </span>
+                                            </div>
+                                        </figure>
+                                        <!--Content description-->
+                                        <h4 class="latest-item-content-description mb-0">
+                                            <a href="#">
+                                                Ivana Žigić, novinarka Srpskog telegrafa 
+                                                koju je Sergej Trifunović brutalno uvredio, 
+                                                podneće privatnu
+                                            </a>
+                                        </h4>
+                                    </div>
+                                </article>
+                                <!--Single-news : Latest news item start-->
+                                <article class="latest-item zoom-holder">
+                                    <!--Item content-->
+                                    <div class="latest-item-content">
+                                        <!--Content picture-->
+                                        <figure class="latest-item-content-pic">
+                                            <a href="#" class="img-holder size-project">
+                                                <img class="zoom-to-get" src="img/latest/latest_section_news_pic1.png" alt="Slika 1"/>
+                                            </a>
+                                        </figure>
+                                        <!--Content description-->
+                                        <h4 class="latest-item-content-description mb-0">
+                                            <a href="#">
+                                                BEOGRADSKI TRGOVCI DUŠU NEMAJU! 
+                                                Naplaćuju začine koji se dele besplatno!
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <!--Item info-->
+                                    <div class="latest-item-info d-md-flex justify-content-between">
+                                        <!--Author info-->
+                                        <p class="latest-item-info-author mb-2 mb-md-0">
+                                            <a href="#">
+                                                J. Matijašević
+                                            </a>
+                                        </p>
+                                        <!--Release date info-->
+                                        <p class="latest-item-info-date mb-2 mb-md-0 ml-md-auto">
+                                            Danas u 11:45
+                                        </p>
+                                        <!--Comments info-->
+                                        <p class="latest-item-info-comments mb-0 ml-md-3">
+                                            <a href="#" class="d-inline-block">
+                                                <span class="fa fa-comment-o"></span>
+                                                123
+                                            </a>
+                                        </p>
+                                    </div>
+                                </article>
+                                <!--Single-news : Latest news item start-->
+                                <article class="latest-item zoom-holder">
+                                    <!--Item content-->
+                                    <div class="latest-item-content">
+                                        <!--Content picture-->
+                                        <figure class="latest-item-content-pic">
+                                            <a href="#" class="img-holder size-project">
+                                                <img class="zoom-to-get" src="img/latest/latest_section_news_pic2.png" alt="Slika 2"/>
+                                            </a>
+                                        </figure>
+                                        <!--Content description-->
+                                        <h4 class="latest-item-content-description mb-0">
+                                            <a href="#">
+                                                Lorem Ipsum is simply dummy text of 
+                                                the printing and typesetting industry. 
+                                                Lorem Ipsum has been the industry's 
+                                                standard dummy text
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <!--Item info-->
+                                    <div class="latest-item-info d-md-flex justify-content-between">
+                                        <!--Author info-->
+                                        <p class="latest-item-info-author mb-2 mb-md-0">
+                                            <a href="#">
+                                                J. Matijašević
+                                            </a>
+                                        </p>
+                                        <!--Release date info-->
+                                        <p class="latest-item-info-date mb-2 mb-md-0 ml-md-auto">
+                                            Danas u 11:45
+                                        </p>
+                                        <!--Comments info-->
+                                        <p class="latest-item-info-comments mb-0 ml-md-3">
+                                            <a href="#" class="d-inline-block">
+                                                <span class="fa fa-comment-o"></span>
+                                                123
+                                            </a>
+                                        </p>
+                                    </div>
+                                </article>
+                                <!--Single-news : Latest news item start-->
+                                <article class="latest-item zoom-holder">
+                                    <!--Item content-->
+                                    <div class="latest-item-content">
+                                        <!--Content picture-->
+                                        <figure class="latest-item-content-pic">
+                                            <a href="#" class="img-holder size-project">
+                                                <img class="zoom-to-get" src="img/latest/latest_section_news_pic6.png" alt=""/>
+                                            </a>
+                                        </figure>
+                                        <!--Content description-->
+                                        <h4 class="latest-item-content-description mb-0">
+                                            <a href="#">
+                                                Lorem Ipsum is simply dummy text of 
+                                                the printing and typesetting industry. 
+                                                Lorem Ipsum has been the industry's 
+                                                standard dummy text
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <!--Item info-->
+                                    <div class="latest-item-info d-md-flex justify-content-between">
+                                        <!--Author info-->
+                                        <p class="latest-item-info-author mb-2 mb-md-0">
+                                            <a href="#">
+                                                J. Matijašević
+                                            </a>
+                                        </p>
+                                        <!--Release date info-->
+                                        <p class="latest-item-info-date mb-2 mb-md-0 ml-md-auto">
+                                            Danas u 11:45
+                                        </p>
+                                        <!--Comments info-->
+                                        <p class="latest-item-info-comments mb-0 ml-md-3">
+                                            <a href="#" class="d-inline-block">
+                                                <span class="fa fa-comment-o"></span>
+                                                123
+                                            </a>
+                                        </p>
+                                    </div>
+                                </article>
                             </aside>
-                        </div>
+                        </div><!------------------------SINGLE-NEWS ASIDE END------------------------>
                     </div>
                 </div>
             </div>

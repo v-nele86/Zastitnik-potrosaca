@@ -153,44 +153,24 @@
         
         .single-news-all-comments{
             a{
-            color: $single-news-all-comments-color !important;
-            &:hover{
-                color: $single-news-all-comments-hover-color !important;
-                .fa{
-                    color: $single-news-all-comments-hover-color !important;
-                }
-            }
-            .fa{
                 color: $single-news-all-comments-color !important;
-            }
-        }
-        }
-        
-/*        .latest-all{
-            font-family: $latest-all-font-family;
-            font-size: $latest-all-font-size;
-            line-height: $latest-all-line-height;
-            letter-spacing: $latest-all-letter-spacing;
-            a{
-                position: relative;
-                padding-right: 25px;
-                color: $latest-all-color !important;
                 &:hover{
-                    color: $latest-all-hover-color !important;
+                    color: $single-news-all-comments-hover-color !important;
                     .fa{
-                        color: $latest-all-hover-color !important;
+                        color: $single-news-all-comments-hover-color !important;
                     }
                 }
                 .fa{
-                    position: absolute;
-                    font-size: 2rem;
-                    right: 0;
-                    bottom: -3px;
-                    color: $latest-all-color !important;
+                    color: $single-news-all-comments-color !important;
                 }
             }
-        }*/
+        }
     }
+}
+
+.single-news-page-aside{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 /**********************SS BREAKPOINT**********************/

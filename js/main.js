@@ -77,6 +77,46 @@ $(document).ready(function () {
     }
     
     
+//    $(function () {
+//        $(".single-news-form-item").validate({
+//            highlight: function (element) {
+//                $(element).closest('.form-group').addClass("has-danger");
+//                $(element).addClass("form-control-danger");
+//            },
+//            unhighlight: function (element) {
+//                $(element).closest('.form-group').removeClass('has-danger').addClass('has-success');
+//                $(element).removeClass('form-control-danger').addClass('form-control-success');
+//            },
+//            rules: {
+//                name: {
+//                    required: true
+//                },
+//                email:{
+//                    required:true,
+//                    email:true
+//                }
+//
+//
+//            },
+//            messages: {
+//                name: {
+//                    required: "Polje *Ime je obavezno!"
+//                },
+//                email:{
+//                    required: 'Polje *Email je obavezno!',
+//                    email:'Molimo unesite validni Email!'
+//                }
+//
+//            },
+//            errorElement: 'p',
+//            errorPlacement: function (error, element) {
+//                error.appendTo($(element).closest('.form-group').find('.error-msg'));
+//            }
+//
+//        });
+//    });
+    
+    
     headerScroll();
     animation();
     hamburger();

@@ -793,66 +793,45 @@ CHANGES IN COMPARISON TO LATEST-SECTION MADE IN HTML THROUGH BOOTRSTAP CLASSES*/
       letter-spacing: 0.17px;
       border-radius: 3px;
       padding: 13px 18px; }
-.single-news-page-section .single-news-comments {
-  /*        .latest-all{
-              font-family: $latest-all-font-family;
-              font-size: $latest-all-font-size;
-              line-height: $latest-all-line-height;
-              letter-spacing: $latest-all-letter-spacing;
-              a{
-                  position: relative;
-                  padding-right: 25px;
-                  color: $latest-all-color !important;
-                  &:hover{
-                      color: $latest-all-hover-color !important;
-                      .fa{
-                          color: $latest-all-hover-color !important;
-                      }
-                  }
-                  .fa{
-                      position: absolute;
-                      font-size: 2rem;
-                      right: 0;
-                      bottom: -3px;
-                      color: $latest-all-color !important;
-                  }
-              }
-          }*/ }
-  .single-news-page-section .single-news-comments .single-news-comments-item {
-    margin-bottom: 18px;
-    border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0 15px 14px -10px rgba(88, 112, 148, 0.31); }
-    .single-news-page-section .single-news-comments .single-news-comments-item:last-of-type {
-      margin-bottom: 31px; }
-    .single-news-page-section .single-news-comments .single-news-comments-item .single-news-comments-user-pic {
-      height: 45px;
-      width: 45px;
-      border-radius: 50%; }
-    .single-news-page-section .single-news-comments .single-news-comments-item .single-news-comments-user-name {
-      font-family: "Ubuntu", sans-serif;
-      font-weight: 700;
-      color: #161616;
-      font-size: 0.86rem;
-      line-height: 1.07rem;
-      letter-spacing: 0.26px; }
-    .single-news-page-section .single-news-comments .single-news-comments-item .single-news-comments-user-date {
-      font-size: 0.71rem;
-      color: #AFAFAF;
-      letter-spacing: 0.14px;
-      line-height: 1.29rem; }
-    .single-news-page-section .single-news-comments .single-news-comments-item .single-news-comments-content {
-      font-size: 0.86rem;
-      line-height: 1.21rem;
-      letter-spacing: -0.15px; }
-  .single-news-page-section .single-news-comments .single-news-all-comments a {
-    color: #363739 !important; }
-    .single-news-page-section .single-news-comments .single-news-all-comments a:hover {
+.single-news-page-section .single-news-comments .single-news-comments-item {
+  margin-bottom: 18px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 15px 14px -10px rgba(88, 112, 148, 0.31); }
+  .single-news-page-section .single-news-comments .single-news-comments-item:last-of-type {
+    margin-bottom: 31px; }
+  .single-news-page-section .single-news-comments .single-news-comments-item .single-news-comments-user-pic {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%; }
+  .single-news-page-section .single-news-comments .single-news-comments-item .single-news-comments-user-name {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    color: #161616;
+    font-size: 0.86rem;
+    line-height: 1.07rem;
+    letter-spacing: 0.26px; }
+  .single-news-page-section .single-news-comments .single-news-comments-item .single-news-comments-user-date {
+    font-size: 0.71rem;
+    color: #AFAFAF;
+    letter-spacing: 0.14px;
+    line-height: 1.29rem; }
+  .single-news-page-section .single-news-comments .single-news-comments-item .single-news-comments-content {
+    font-size: 0.86rem;
+    line-height: 1.21rem;
+    letter-spacing: -0.15px; }
+.single-news-page-section .single-news-comments .single-news-all-comments a {
+  color: #363739 !important; }
+  .single-news-page-section .single-news-comments .single-news-all-comments a:hover {
+    color: #686a6d !important; }
+    .single-news-page-section .single-news-comments .single-news-all-comments a:hover .fa {
       color: #686a6d !important; }
-      .single-news-page-section .single-news-comments .single-news-all-comments a:hover .fa {
-        color: #686a6d !important; }
-    .single-news-page-section .single-news-comments .single-news-all-comments a .fa {
-      color: #363739 !important; }
+  .single-news-page-section .single-news-comments .single-news-all-comments a .fa {
+    color: #363739 !important; }
+
+.single-news-page-aside {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important; }
 
 /**********************SS BREAKPOINT**********************/
 @media (min-width: 450px) {
