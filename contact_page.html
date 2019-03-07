@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+    <head>
+        <title>Zastitnik potrosaca - Naslovna</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Nebojsa Vulicevic">
+        <meta name="description" content="Sajt je dodatak lista Informer koji 
+              se bavi pitanjima o problemima i potencijalnim prevarama sa kojima 
+              se srecu kupci na trzistu">
+        <meta name="keywords" content="zastitnik potrosaca, informer">
+
+        <!--iOS compatibile-->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-title" content="Site Title">
+        <link rel="apple-touch-icon" href="putanja do ikonice favicon li neke">        
+
+        <!--Android compatibile-->
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="aplication-name" content="Site Title">
+        <link rel="icon" type="icon/png" href="putanja do ikonice favicon li neke">
+
+        <!--FONTS-->
+        <!--Awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!--bootstrap-->
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+
+        <!--external css, like plugins ...-->
+        <link href="css/hamburger.css" rel="stylesheet" type="text/css"/>
+
+        <!--theme css-->
+        <link href="css/theme.css" rel="stylesheet" type="text/css"/>
+        <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!--********************************************************************
+        HEADER START
+        ********************************************************************-->
+        <header class="fixed-top">
+            <div class="container">
+                <nav class="navbar navbar-light navbar-expand-lg py-0 px-0 mr-0">
+                    <!--Navigation logo-->
+                    <a class="navbar-brand py-0" href="#">
+                        <img src="img/logo.png" alt="LOGO"/>
+                    </a>
+                    <!--Report button-->
+                    <button class="nav-report btn btn-danger px-1 px-ss-3 ml-auto ml-lg-4 ml-xl-5 mr-3 mr-lg-0 order-lg-last" type="submit">Prijavi problem</button>
+                    <!--Hamburger collapse-->
+                    <button class="hamburger hamburger--spring navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                    <!--Main menu-->
+                    <div class="collapse navbar-collapse" id="main-menu">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">Kupovina <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Usluge</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Banke</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Hrana</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Automobil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tehnika</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Razno</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!--********************************************************************
+        HEADER END
+        ********************************************************************-->
+        <!--********************************************************************
+        MAIN START
+        ********************************************************************-->
+        <main>
+            <!------------------------CONCTACT SECTION START------------------------>
+            <section class="contact-page latest py-5 px-3 px-sm-0">
+                <div class="container">
+                    <!--Contact item - for width regulation-->
+                    <article class="contact-page-item mx-ss-auto">
+                        <!--Contact ahead start-->
+                        <div class="contact-ahead latest-ahead mb-4">
+                            <!--Contact title-->
+                            <div class="latest-title-wrap">
+                                <h1 class="latest-title text-center mb-0">
+                                    Kontakt
+                                </h1>
+                                <div class="bottom-after mx-auto"></div>
+                            </div>
+                        </div><!--Contact ahead end-->
+                        
+                        <div class="contact-form-wrapper mb-5">
+                            <form class="contact-form">
+                                <div class="form-group">
+                                    <label for="firstname">Ime:</label>
+                                    <input class="contact-first-name form-control" type="text" name="firstname" value="" id="firstname">
+                                    <div class="error-msg"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastname">Prezime:</label>
+                                    <input class="contact-last-name form-control" type="text" name="lastname" value="" id="lastname">
+                                    <div class="error-msg"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email adresa:</label>
+                                    <input class="contact-email form-control" type="email" name="email" value="" id="email">
+                                    <div class="error-msg"></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Poruka:</label>
+                                    <textarea class="contact-message form-control" name="message" id="message"></textarea>
+                                    <div class="error-msg"></div>
+                                </div>
+                                <div class="btn-wrapper text-center">
+                                    <button type="submit" class="btn btn-danger text-uppercase contact-form-submit">prijavi se</button>
+                                </div>
+                            </form>
+                        </div>
+                        
+                        
+                    </article>
+                </div>
+            </section><!------------------------LATEST SECTION END------------------------>
+        </main>
+        <!--********************************************************************
+        MAIN END
+        ********************************************************************-->
+        <!--********************************************************************
+        FOOTER START
+        ********************************************************************-->
+        <footer class="bg-primary text-center">
+            <div class="container">
+                <div class="footer-navigation mb-4">
+                    <ul class="footer-nav-list d-md-flex justify-content-center list-unstyled mb-0">
+                        <li class="footer-nav-item">
+                            <a href="#"  class="footer-nav-link">
+                                Forum
+                            </a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="#"  class="footer-nav-link">
+                                O nama
+                            </a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="#"  class="footer-nav-link">
+                                Impresum
+                            </a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="#"  class="footer-nav-link">
+                                Pišite nam
+                            </a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="#"  class="footer-nav-link">
+                                Pravila korišćenja
+                            </a>
+                        </li>
+                        <li class="footer-nav-item">
+                            <a href="#"  class="footer-nav-link">
+                                Kontakt
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-social mb-4">
+                    <ul class="footer-social-list d-flex justify-content-center list-unstyled mb-0">
+                        <li class="footer-social-item">
+                            <a href="#" class="footer-social-link zoom-holder">
+                                <span class="fa fa-facebook zoom-to-get"></span>
+                            </a>
+                        </li>
+                        <li class="footer-social-item">
+                            <a href="#" class="footer-social-link zoom-holder">
+                                <span class="fa fa-twitter zoom-to-get"></span>
+                            </a>
+                        </li>
+                        <li class="footer-social-item">
+                            <a href="#" class="footer-social-link zoom-holder">
+                                <span class="fa fa-linkedin zoom-to-get"></span>
+                            </a>
+                        </li>
+                        <li class="footer-social-item">
+                            <a href="#" class="footer-social-link zoom-holder">
+                                <span class="fa fa-google-plus zoom-to-get"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-copyright">
+                    <p class="footer-copyright-text mb-0">
+                        © 2018 Zaštita potrošača. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!--********************************************************************
+        FOOTER END
+        ********************************************************************-->
+        <!--********************************************************************
+        SCRIPTS goes here
+        ********************************************************************-->
+        <!--First jquery, then popper and finaly bootstrap-->
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/popper.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+        <!--Custom page & Plugins JS-->
+        <script src="js/jquery.validate.min.js" type="text/javascript"></script>
+
+        <!--All page js-->
+        <script src="js/main.js" type="text/javascript"></script>
+        
+        <script type="text/javascript">
+            
+            
+            $(function () {
+                $(".contact-form").validate({
+                    highlight: function (element) {
+                        $(element).closest('.form-group').addClass("has-danger");
+                        $(element).addClass("form-control-danger");
+                    },
+                    unhighlight: function (element) {
+                        $(element).closest('.form-group').removeClass('has-danger').addClass('has-success');
+                        $(element).removeClass('form-control-danger').addClass('form-control-success');
+                    },
+                    rules: {
+                        firstname: {
+                            required: true
+                        },
+                        lastname: {
+                            required: true
+                        },
+                        email:{
+                            required:true,
+                            email:true
+                        },
+                        message: {
+                            required: true,
+                            maxlength: 255
+                        }
+
+
+                    },
+                    messages: {
+                        firstname: {
+                            required: "Polje *Ime je obavezno!"
+                        },
+                        lastname: {
+                            required: "Polje *Prezime je obavezno!"
+                        },
+                        email: {
+                            required: 'Polje *Email je obavezno!',
+                            email:'Molimo unesite validni Email!'
+                        },
+                        message: {
+                            required: 'Molimo Vas, unesite vašu poruku',
+                            maxlength: 'Vaša poruka ne sme biti duža od 255 karaktera'
+                        }
+
+                    },
+                    errorElement: 'p',
+                    errorPlacement: function (error, element) {
+                        error.appendTo($(element).closest('.form-group').find('.error-msg'));
+                    }
+
+                });
+            });
+            
+        </script>
+            
+    </body>
+</html>

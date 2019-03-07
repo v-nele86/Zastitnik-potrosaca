@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*GOOGLE FONTS*/
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&subset=latin-ext");
 /*GENERATED FONTS*/
@@ -364,6 +365,7 @@ main {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23d9534f' viewBox='-2 -2 7 7'%3E%3Cpath stroke='%23d9534f' d='M0 0l3 3m0-3L0 3'/%3E%3Ccircle r='.5'/%3E%3Ccircle cx='3' r='.5'/%3E%3Ccircle cy='3' r='.5'/%3E%3Ccircle cx='3' cy='3' r='.5'/%3E%3C/svg%3E"); }
 
 .error-msg > * {
+  margin-top: 5px;
   color: #d9534f; }
 
 /**********************HEADER GENERAL STYLE**********************/
@@ -540,7 +542,7 @@ header {
                     left: 0;
                 }*/ }
     .comments .comments-item .comments-title:before {
-      content: '&rdquo;';
+      content: 'ΓÇ¥';
       color: #9DC72D; }
   .comments .comments-item .comments-content {
     font-family: "ProximaNova-Regular";
@@ -718,6 +720,50 @@ header {
 @media (min-width: 992px) {
   .signup {
     padding: 26px 0 !important; } }
+/**********************SIGNUP SECTION GENERAL STYLE**********************/
+footer {
+  padding-bottom: 20px !important;
+  padding-top: 25px !important; }
+  footer .footer-navigation .footer-nav-list .footer-nav-link {
+    display: inline-block;
+    font-family: "ProximaNova-Bold";
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.21rem;
+    letter-spacing: -0.15px;
+    padding: 5px 15px; }
+    footer .footer-navigation .footer-nav-list .footer-nav-link:hover {
+      color: #bfbfbf; }
+  footer .footer-social .footer-social-link {
+    display: inline-block;
+    margin: 0 7px; }
+    footer .footer-social .footer-social-link .fa {
+      color: #fff;
+      height: 30px;
+      width: 30px;
+      line-height: 30px; }
+    footer .footer-social .footer-social-link .fa-facebook {
+      background: #3b5998; }
+    footer .footer-social .footer-social-link .fa-twitter {
+      background: #00acee; }
+    footer .footer-social .footer-social-link .fa-linkedin {
+      background: #0077B5; }
+    footer .footer-social .footer-social-link .fa-google-plus {
+      background: #DD4B39; }
+  footer .footer-copyright .footer-copyright-text {
+    color: #fff;
+    font-family: "ProximaNova-Regular";
+    font-size: 0.86rem;
+    letter-spacing: -0.13px;
+    line-height: 1rem; }
+
+/**********************LG BREAKPOINT**********************/
+@media (min-width: 992px) {
+  footer {
+    padding-bottom: 34px !important;
+    padding-top: 42px !important; }
+    footer .footer-navigation {
+      margin-bottom: 33px !important; } }
 /**********************CATEGORY PAGE GENERAL STYLE**********************/
 /*NO SPECIAL STYLE NEEDED, 
 CHANGES IN COMPARISON TO LATEST-SECTION MADE IN HTML THROUGH BOOTRSTAP CLASSES*/
@@ -888,54 +934,48 @@ CHANGES IN COMPARISON TO LATEST-SECTION MADE IN HTML THROUGH BOOTRSTAP CLASSES*/
 @media (min-width: 992px) {
   .about-page {
     padding-top: 60px;
-    padding-bottom: 85px; }
+    padding-bottom: 87px; }
     .about-page .about-page-pic {
       margin-bottom: 31px !important; }
     .about-page .about-page-description {
       margin-bottom: 27px !important; } }
-/**********************SIGNUP SECTION GENERAL STYLE**********************/
-footer {
-  padding-bottom: 20px !important;
-  padding-top: 25px !important; }
-  footer .footer-navigation .footer-nav-list .footer-nav-link {
-    display: inline-block;
+/**********************CONTACT PAGE GENERAL STYLE**********************/
+.contact-page .contact-form {
+  color: #333333;
+  font-size: 1.14rem;
+  line-height: 1.71rem;
+  letter-spacing: -0.17px; }
+  .contact-page .contact-form .form-group {
+    margin-bottom: 24px; }
+  .contact-page .contact-form input,
+  .contact-page .contact-form textarea {
+    border: 1px solid #DCD8D7;
+    border-radius: 2px;
+    background-color: transparent; }
+  .contact-page .contact-form textarea {
+    height: 11.97rem; }
+  .contact-page .contact-form .contact-form-submit {
+    border-radius: 3px;
     font-family: "ProximaNova-Bold";
-    color: #fff;
-    font-size: 1rem;
-    line-height: 1.21rem;
-    letter-spacing: -0.15px;
-    padding: 5px 15px; }
-    footer .footer-navigation .footer-nav-list .footer-nav-link:hover {
-      color: #bfbfbf; }
-  footer .footer-social .footer-social-link {
-    display: inline-block;
-    margin: 0 7px; }
-    footer .footer-social .footer-social-link .fa {
-      color: #fff;
-      height: 30px;
-      width: 30px;
-      line-height: 30px; }
-    footer .footer-social .footer-social-link .fa-facebook {
-      background: #3b5998; }
-    footer .footer-social .footer-social-link .fa-twitter {
-      background: #00acee; }
-    footer .footer-social .footer-social-link .fa-linkedin {
-      background: #0077B5; }
-    footer .footer-social .footer-social-link .fa-google-plus {
-      background: #DD4B39; }
-  footer .footer-copyright .footer-copyright-text {
-    color: #fff;
-    font-family: "ProximaNova-Regular";
-    font-size: 0.86rem;
-    letter-spacing: -0.13px;
-    line-height: 1rem; }
+    font-size: 1.07rem;
+    line-height: 1.43rem;
+    letter-spacing: 0.15px;
+    padding: 12px 72px 15px; }
 
+/**********************SS BREAKPOINT**********************/
+@media (min-width: 450px) {
+  .contact-page .contact-page-item {
+    max-width: 400px; } }
+/**********************MD BREAKPOINT**********************/
+@media (min-width: 768px) {
+  .contact-page .contact-ahead {
+    margin-bottom: 53px !important; } }
 /**********************LG BREAKPOINT**********************/
 @media (min-width: 992px) {
-  footer {
-    padding-bottom: 34px !important;
-    padding-top: 42px !important; }
-    footer .footer-navigation {
-      margin-bottom: 33px !important; } }
+  .contact-page {
+    padding-top: 60px !important;
+    padding-bottom: 87px !important; }
+    .contact-page .contact-form-wrapper {
+      margin-bottom: 100px !important; } }
 
 /*# sourceMappingURL=theme.css.map */

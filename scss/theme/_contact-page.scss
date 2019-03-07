@@ -1,0 +1,65 @@
+
+/**********************CONTACT PAGE GENERAL STYLE**********************/
+.contact-page{
+    
+    .contact-form{
+        color: $contact-form-font-color;
+        font-size: $contact-form-font-size;
+        line-height: $contact-form-line-height;
+        letter-spacing: $contact-form-letter-spacing;
+        
+        .form-group{
+            margin-bottom: $contact-form-group-margin-bottom;
+        }
+        
+        input,
+        textarea{
+            border: $contact-form-input-border;
+            border-radius: $contact-form-input-border-rad;
+            background-color: $contact-form-input-bg-color;
+        }
+        
+        textarea{
+            height: $contact-form-textarea-height;
+        }
+        
+        .contact-form-submit{
+            border-radius: $contact-form-btn-border-rad;
+            font-family: $contact-form-btn-font-family;
+            font-size: $contact-form-btn-font-size;
+            line-height: $contact-form-btn-line-height;
+            letter-spacing: $contact-form-btn-letter-spacing;
+            padding: $contact-form-btn-padd-top $contact-form-btn-padd-x $contact-form-btn-padd-bottom;
+        }
+    }
+}
+
+/**********************SS BREAKPOINT**********************/
+@media(min-width: 450px){
+    .contact-page{
+        .contact-page-item{
+            max-width: 400px;
+        }
+    }
+}
+
+/**********************MD BREAKPOINT**********************/
+@media(min-width: 768px){
+    .contact-page{
+        .contact-ahead{
+            margin-bottom: $contact-page-ahead-margin-bottom-desk !important;
+        }
+    }
+}
+
+/**********************LG BREAKPOINT**********************/
+@media(min-width: 992px){
+    .contact-page{
+        padding-top: $contact-page-padd-top-desk !important;
+        padding-bottom: $contact-page-padd-bottom-desk !important;
+        
+        .contact-form-wrapper{
+            margin-bottom: $contact-form-margin-bottom-desk !important;
+        }
+    }
+}

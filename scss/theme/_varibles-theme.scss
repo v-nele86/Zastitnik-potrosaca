@@ -265,7 +265,7 @@ $single-news-form-item-font-color: #333333;
 $single-news-form-item-font-size: 1.14rem;
 $single-news-form-item-line-height: 1.14rem;
 $single-news-form-item-letter-spacing: 0.06px;
-//single-news form inputs
+//single-news form textarea
 $single-news-form-item-textarea-height: 19.35rem;
 $single-news-form-item-textarea-line-height: 1.29rem;
 //single-news form check
@@ -305,7 +305,7 @@ $single-news-all-comments-hover-color: lighten($single-news-all-comments-color, 
 ABOUT-PAGE VARIABLES
 *****************************/
 $about-page-padd-top-desk: 60px;
-$about-page-padd-bottom-desk: 85px;
+$about-page-padd-bottom-desk: 87px;
 $about-page-pic-border-rad: 3px;
 $about-page-pic-bg-color: $white;
 $about-page-pic-margin-bottom-desk: 31px;
@@ -321,3 +321,27 @@ $about-page-content-letter-spacing: $single-news-item-content-letter-spacing;
 /*****************************
 CONTACT-PAGE VARIABLES
 *****************************/
+$contact-page-padd-top-desk: 60px;
+$contact-page-padd-bottom-desk: 87px;
+//contact title margin bottom since 768px
+$contact-page-ahead-margin-bottom-desk: 53px;
+//contact form style
+//font-family & weight inherited from body, font color & size shared with single-news-form
+$contact-form-margin-bottom-desk: 100px;
+$contact-form-font-color: $single-news-form-item-font-color;
+$contact-form-font-size: $single-news-form-item-font-size;
+$contact-form-line-height: 1.71rem;
+$contact-form-letter-spacing: -0.17px;
+$contact-form-group-margin-bottom: 24px;
+$contact-form-textarea-height: 11.97rem;
+$contact-form-input-border: 1px solid #DCD8D7;
+$contact-form-input-border-rad: 2px;
+$contact-form-input-bg-color: transparent;
+$contact-form-btn-border-rad: 3px;
+$contact-form-btn-font-family: $font-proximanova-bold;
+$contact-form-btn-font-size: 1.07rem;
+$contact-form-btn-line-height: 1.43rem;
+$contact-form-btn-letter-spacing: 0.15px;
+$contact-form-btn-padd-top: 12px;
+$contact-form-btn-padd-bottom: 15px;
+$contact-form-btn-padd-x: 72px;

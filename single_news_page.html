@@ -232,14 +232,14 @@ and open the template in the editor.
                                             <div class="col-12 mb-4">
                                                 <div class="form-group">
                                                     <label for="form-comment">Komentar</label>
-                                                    <textarea class="single-news-form-comment w-100 p-2" id="form-comment"></textarea>
+                                                    <textarea class="single-news-form-comment form-control" name="comment" id="form-comment"></textarea>
                                                     <div class="error-msg"></div>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 align-self-end">
                                                 <div class="form-group text-center text-sm-left mb-4 mb-sm-0">
                                                     <label class="single-news-form-check-test mb-0 mr-2" for="form-check">5 + 3 =</label>
-                                                    <input class="single-news-form-check-answer p-2" type="text" name="name" value="" id="form-check">
+                                                    <input class="single-news-form-check-answer p-2" type="text" name="check" value="" id="form-check">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 align-self-end">
@@ -661,10 +661,61 @@ and open the template in the editor.
         <script src="js/popper.js" type="text/javascript"></script>
         <script src="js/bootstrap.min.js" type="text/javascript"></script>
 
-
-
+        <!--Custom page & Plugins JS-->
+        <script src="js/jquery.validate.min.js" type="text/javascript"></script>
 
         <!--All page js-->
         <script src="js/main.js" type="text/javascript"></script>
+        
+        <script type="text/javascript">
+            
+        $(function () {
+            $(".single-news-form-item").validate({
+                highlight: function (element) {
+                    $(element).closest('.form-group').addClass("has-danger");
+                    $(element).addClass("form-control-danger");
+                },
+                unhighlight: function (element) {
+                    $(element).closest('.form-group').removeClass('has-danger').addClass('has-success');
+                    $(element).removeClass('form-control-danger').addClass('form-control-success');
+                },
+                rules: {
+                    name: {
+                        required: true
+                    },
+                    email:{
+                        required:true,
+                        email:true
+                    },
+                    comment: {
+                        required: true,
+                        maxlength: 255
+                    }
+
+                },
+                messages: {
+                    name: {
+                        required: "Polje *Ime je obavezno!"
+                    },
+                    email: {
+                        required: 'Polje *Email je obavezno!',
+                        email:'Molimo unesite validni Email!'
+                    },
+                    comment: {
+                        required: 'Molimo Vas, unesite vaš komentar',
+                        maxlength: 'Komentar ne može imati više od 255 karaktera'
+                    }
+
+                },
+                errorElement: 'p',
+                errorPlacement: function (error, element) {
+                    error.appendTo($(element).closest('.form-group').find('.error-msg'));
+                }
+
+            });
+        });
+            
+        </script>
+        
     </body>
 </html>
