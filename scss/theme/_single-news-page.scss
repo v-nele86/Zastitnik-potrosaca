@@ -201,6 +201,12 @@
             margin-bottom: $single-news-title-wrapper-margin-bottom !important;
         }
     }
+    
+    .single-news-page-aside{
+        .latest-item{
+            width: 75%;
+        }
+    }
 }
 
 /**********************MD BREAKPOINT**********************/
@@ -210,6 +216,12 @@
             .single-news-form-ahead{
                 margin-bottom: 35px !important;
             }
+        }
+    }
+    
+    .single-news-page-aside{
+        .latest-item{
+            width: 100%;
         }
     }
 }

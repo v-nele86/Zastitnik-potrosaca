@@ -35,6 +35,12 @@ FOOTER VARIABLES
 /*****************************
 SINGLE-PAGE VARIABLES
 *****************************/
+/*****************************
+ABOUT-PAGE VARIABLES
+*****************************/
+/*****************************
+CONTACT-PAGE VARIABLES
+*****************************/
 /*GENERAL STYLE*/
 html {
   font-size: 14px; }
@@ -844,11 +850,17 @@ CHANGES IN COMPARISON TO LATEST-SECTION MADE IN HTML THROUGH BOOTRSTAP CLASSES*/
     line-height: 3.71rem;
     font-size: 2.64rem; }
   .single-news-page-section .single-news-item-title-wrapper {
-    margin-bottom: 26px !important; } }
+    margin-bottom: 26px !important; }
+
+  .single-news-page-aside .latest-item {
+    width: 75%; } }
 /**********************MD BREAKPOINT**********************/
 @media (min-width: 768px) {
   .single-news-page-section .single-news-form .single-news-form-ahead {
-    margin-bottom: 35px !important; } }
+    margin-bottom: 35px !important; }
+
+  .single-news-page-aside .latest-item {
+    width: 100%; } }
 /**********************LG BREAKPOINT**********************/
 @media (min-width: 992px) {
   .single-news-page-wrapper {
