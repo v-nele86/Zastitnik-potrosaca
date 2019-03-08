@@ -3,19 +3,7 @@
 .signup{
     background-color: $signup-section-bg;
     box-shadow: $signup-section-box-shadow;
-    .signup-info-icon{
-        .signup-info-icon-border{
-            background: $signup-icon-bg;
-            border-radius: 50%;
-            height: 92px;
-            width: 92px;
-        }
-        .fa-info-circle{
-            color: $signup-icon-color;
-            font-size: 4.3rem;
-            line-height: 6.57rem;
-        }
-    }
+    
     .signup-info-text{
         font-family: $signup-text-font-family;
         font-size: $signup-text-font-size;

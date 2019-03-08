@@ -12,7 +12,7 @@ $(document).ready(function () {
         }
     }
     
-    //IMAGE ZOOM custom ANIMATION
+    //IMAGE ZOOM CUSTOM ANIMATION
     if($('.zoom-holder').length > 0 && $('.zoom-to-get').length > 0){
         $('.zoom-holder').mouseenter(function(){
             $(this).find('.zoom-to-get').addClass('image-zoom');
@@ -46,15 +46,16 @@ $(document).ready(function () {
         $('.animation').each(function () {
             var position = $(this).offset().top;
             var animation = $(this).attr('data-animation');
-            //var delay = $(this).attr('data-delay');
+            var delay = $(this).attr('data-delay');
             if (position < scroll + windowHight - 60) {
                 $(this).addClass(animation);
-                //$(this).css('animation-delay', delay);
+                $(this).css('animation-delay', delay);
             }
-            console.log(position);
+            //console.log(position);
         });
     }
     
+    //HAMBURGER BUTTON ANIMATION
     function hamburger(){
         $('.hamburger').click(function(){
             $(this).toggleClass('is-active');
@@ -63,6 +64,7 @@ $(document).ready(function () {
         
     
 //**********************ANIMATION INITIALIZATION**********************
+
     headerScroll();
     animation();
     hamburger();
