@@ -19,11 +19,15 @@
             font-family: $comments-title-font-family;
             font-size: $comments-title-font-size;
             line-height: $comments-title-line-height;
-            //position: relative;
-            //padding-left: $comments-title-padd-left;
+            position: relative;
+            padding-left: $comments-title-padd-left;
             &:before{
                 content: '”';
                 color: #9DC72D;
+                font-size: 5rem;
+                position: absolute;
+                left: 0;
+                top: 80%;
             }
 /*            .fa{
                 position: absolute;

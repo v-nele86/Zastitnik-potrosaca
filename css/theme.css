@@ -535,6 +535,8 @@ header {
     font-family: "ProximaNova-Bold";
     font-size: 1.14rem;
     line-height: 1.36rem;
+    position: relative;
+    padding-left: 45px;
     /*            .fa{
                     position: absolute;
                     color: $comments-title-faIcon-color;
@@ -542,8 +544,12 @@ header {
                     left: 0;
                 }*/ }
     .comments .comments-item .comments-title:before {
-      content: 'ΓÇ¥';
-      color: #9DC72D; }
+      content: '”';
+      color: #9DC72D;
+      font-size: 5rem;
+      position: absolute;
+      left: 0;
+      top: 80%; }
   .comments .comments-item .comments-content {
     font-family: "ProximaNova-Regular";
     font-size: 0.93rem;
