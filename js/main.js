@@ -1,6 +1,6 @@
 $(document).ready(function () {
     
-//**********************ANIMATION CODE**********************
+//********************************ANIMATION CODE********************************
     
     //HEADER SCROLL ANIMATION
     function headerScroll(){
@@ -63,7 +63,7 @@ $(document).ready(function () {
     }
         
     
-//**********************ANIMATION INITIALIZATION**********************
+//***************************ANIMATION INITIALIZATION***************************
 
     headerScroll();
     animation();
@@ -76,8 +76,5 @@ $(document).ready(function () {
     
     
     
-    
-    
-});//end document.ready
-
-
+        
+});//end document.ready---------------------------------------------------------

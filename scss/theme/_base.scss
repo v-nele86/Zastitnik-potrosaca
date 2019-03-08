@@ -7,8 +7,11 @@ html{
 
 body{
     font-family: $font-ubuntu;
-    background: radial-gradient(circle, #EFEFEF 0%, #FFFFFF 100%);
     color: $font-color-body;
+}
+
+main{
+    background: radial-gradient(circle, #EFEFEF 0%, #FFFFFF 100%);
 }
 
 img{

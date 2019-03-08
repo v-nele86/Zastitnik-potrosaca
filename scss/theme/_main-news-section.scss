@@ -1,32 +1,34 @@
 
 /**********************NEWS SECTION GENERAL STYLE**********************/
 .news{
+    //news picture figure
     .news-item-pic{
         border-radius: $news-picture-border-rad;
-/*        img{
-            transition: 0.5s linear;
-        }*/
+        
     }
+    //news title
     .news-item-title{
         line-height: $news-item-title-line-height;
         max-height: $news-item-title-max-height;
-        letter-spacing: -0.22px;
+        letter-spacing: $news-item-title-letter-spacing;
         overflow: hidden;
     }
+    //smaller news (article)
     .news-item-small{
         border-radius: $news-item-small-border-rad;
         background-color: $news-item-small-bg;
-        box-shadow: 0 15px 14px -10px rgba(88,112,148,0.31);
+        box-shadow: $news-item-small-box-shadow;
         .news-item-pic{
             width: 100%;
         }
         .news-item-title-wrap{
             width: 100%;
         }
+        //news description (paragraph)
         .news-item-description{
-            letter-spacing: -0.17px;
-            line-height: 1.5rem;
-            max-height: 3rem;
+            letter-spacing: $news-item-description-letter-spacing;
+            line-height: $news-item-description-line-height;
+            max-height: $news-item-description-max-height;
             overflow: hidden;
         }
     }
@@ -35,6 +37,7 @@
 /**********************SS BREAKPOINT**********************/
 @media(min-width: 450px){
     .news{
+        //smaller news (article) picture & heading in same row
         .news-item-small{
             .news-item-pic{
                 width: 33%;
@@ -49,11 +52,13 @@
 /**********************Sm BREAKPOINT**********************/
 @media(min-width: 576px){
     .news{
+        //picture (figure) in big news margin bottom since sm
         .news-item-big{
             .news-item-pic{
-                margin-bottom: 17px !important;
+                margin-bottom: $news-big-picture-margin-bottom-sm !important;
             }
         }
+        //smaller news (article) picture & heading one above another
         .news-item-small{
             .news-item-pic{
                 width: 100%;
@@ -68,6 +73,7 @@
 /**********************MD BREAKPOINT**********************/
 @media(min-width: 768px){
     .news{
+        //smaller news (article) picture & heading in same row
         .news-item-small{
             .news-item-pic{
                 width: 33%;
@@ -81,7 +87,8 @@
 
 /**********************LG BREAKPOINT**********************/
 @media(min-width: 992px){
+    //news section padding on desktop
     .news{
-        padding: 31px 0 15px !important;
+        padding: $news-section-padding-top-desk 0 $news-section-padding-bottom-desk !important;
     }
 }

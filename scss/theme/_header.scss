@@ -1,20 +1,21 @@
 
 /**********************HEADER GENERAL STYLE**********************/
 header{
-    border-bottom: 1px solid header-border-bottom-color;
-    box-shadow: 0 2px 4px 0 #F0F7FF;
+    //header general style
+    border-bottom: $header-border-bottom;
+    box-shadow: $header-box-shadow;
     background-color: $header-bg-color;
-    /*navigation*/
+    //navigation
     .navbar{
         align-items: stretch;
         transition: 0.5s linear;
-        /*navigation logo*/
+        //navigation logo
         .navbar-brand{
             align-self: center;
             max-width: 40%;
             transition: 0.5s linear;
         }
-        /*report button*/
+        //report button
         .nav-report{
             font-family: $font-ubuntu;
             font-weight: $header-report-font-weight;
@@ -22,18 +23,19 @@ header{
             font-size: $header-report-font-size;
             align-self: center;
         }
-        /*hamburger collapse*/
+        //hamburger button
         .navbar-toggler{
-            border: 1px solid $header-navbar-toggler-border-color;
+            border: $header-navbar-toggler-border;
         }
         .hamburger{
             transform: scale(0.6);
             align-self: center;
         }
-        /*main menu*/
+        //main menu
         .navbar-collapse{
             align-items: stretch;
         }
+        //navbar links
         .navbar-nav{                     
             .nav-item:last-of-type .nav-link{
                 border-bottom: none;
@@ -60,6 +62,7 @@ header{
 @media(min-width: 450px){
     header{
         .navbar{
+            //hamburger button resize
             .hamburger{
                 transform: scale(0.7);
             }
@@ -71,7 +74,7 @@ header{
 @media(min-width: 576px){
     header{
         .navbar{
-            /*header resize on scroll*/
+            //header resize on scroll
             .header-scroll-height{
                 max-width: 25%;
             }
@@ -83,16 +86,17 @@ header{
 @media(min-width: 992px){
     header{
         .navbar{
-            /*navigation logo*/
+            //navigation logo
             .navbar-brand{
                 max-width: 30%;
             }
-            /*header resize on scroll*/
+            //header resize on scroll
             .header-scroll-height{
                 max-width: 15%;
             }
-            /*main menu*/
+            //main menu
             .navbar-nav{
+                //navbar links last-of-type style on desktop
                 .nav-item:last-of-type .nav-link{
                     border-bottom: 3px solid transparent;
                     &:hover{
@@ -109,6 +113,7 @@ header{
                 .nav-item{
                     display: flex;
                 }
+                //navbar links style on desktop
                 .nav-link{
                     display: flex;
                     align-items: center;
@@ -140,7 +145,7 @@ header{
     header{
         .navbar{
             .navbar-nav{
-                /*main menu*/
+                //main menu
                 .nav-link{
                     padding: $header-link-padding-y-desk $header-link-padding-x-desk;
                 }
