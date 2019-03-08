@@ -574,14 +574,13 @@ header {
                     left: 0;
                 }*/ }
     .comments .comments-item .comments-title:before {
-      content: 'ΓÇ¥';
+      content: '”';
       color: #9DC72D;
-      font-size: 5rem;
+      font-size: 6rem;
       display: inline-block;
       position: absolute;
       left: 0;
-      top: 80%;
-      margin-right: 13px;
+      top: 100%;
       font-family: arial; }
   .comments .comments-item .comments-content {
     font-family: "ProximaNova-Regular";
