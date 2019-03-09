@@ -36,6 +36,7 @@ FOOTER VARIABLES
 /*****************************
 SINGLE-PAGE VARIABLES
 *****************************/
+/*single-news aside is generaly styled through .latest class, for separate styling .single-news-page-aside & bootrstrap classes were used*/
 /*****************************
 ABOUT-PAGE VARIABLES
 *****************************/
@@ -608,7 +609,7 @@ header {
     position: relative;
     padding-left: 45px; }
     .comments .comments-item .comments-title:before {
-      content: "ΓÇ¥";
+      content: "”";
       color: #9DC72D;
       font-size: 6rem;
       display: inline-block;
@@ -687,50 +688,46 @@ header {
         font-size: 1.2rem;
         position: absolute;
         left: 0; }
-.latest .banner {
-  /*        .latest-item-info{
-              display: none !important;
-          }*/ }
-  .latest .banner .latest-item-content {
-    border-bottom: none; }
-    .latest .banner .latest-item-content .latest-item-content-pic {
-      margin-bottom: 11px;
-      position: relative; }
-    .latest .banner .latest-item-content .latest-item-content-description {
-      height: 4.92rem !important; }
-  .latest .banner .banner-pic-caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 39px 12px 11px;
-    border-radius: 3px;
-    background: linear-gradient(180deg, rgba(97, 97, 99, 0) 0%, #000000 100%); }
-    .latest .banner .banner-pic-caption .banner-pic-caption-time,
-    .latest .banner .banner-pic-caption .banner-pic-caption-newspaper {
+.latest .banner .latest-item-content {
+  border-bottom: none; }
+  .latest .banner .latest-item-content .latest-item-content-pic {
+    margin-bottom: 11px;
+    position: relative; }
+  .latest .banner .latest-item-content .latest-item-content-description {
+    height: 4.92rem !important; }
+.latest .banner .banner-pic-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 39px 12px 11px;
+  border-radius: 3px;
+  background: linear-gradient(180deg, rgba(97, 97, 99, 0) 0%, #000000 100%); }
+  .latest .banner .banner-pic-caption .banner-pic-caption-time,
+  .latest .banner .banner-pic-caption .banner-pic-caption-newspaper {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-size: 0.86rem;
+    line-height: 1.14rem;
+    letter-spacing: 0.05px; }
+  .latest .banner .banner-pic-caption .banner-pic-caption-time {
+    color: #E2322B; }
+  .latest .banner .banner-pic-caption .banner-pic-caption-newspaper {
+    color: #fff; }
+  .latest .banner .banner-pic-caption .banner-pic-caption-comments {
+    position: relative; }
+    .latest .banner .banner-pic-caption .banner-pic-caption-comments img {
+      transform: scale(0.7); }
+    .latest .banner .banner-pic-caption .banner-pic-caption-comments .banner-pic-caption-comments-number {
+      position: absolute;
+      left: 50%;
+      top: 27%;
+      transform: translateX(-50%);
       font-family: "Ubuntu", sans-serif;
-      font-weight: 500;
-      font-size: 0.86rem;
-      line-height: 1.14rem;
-      letter-spacing: 0.05px; }
-    .latest .banner .banner-pic-caption .banner-pic-caption-time {
-      color: #E2322B; }
-    .latest .banner .banner-pic-caption .banner-pic-caption-newspaper {
-      color: #fff; }
-    .latest .banner .banner-pic-caption .banner-pic-caption-comments {
-      position: relative; }
-      .latest .banner .banner-pic-caption .banner-pic-caption-comments img {
-        transform: scale(0.7); }
-      .latest .banner .banner-pic-caption .banner-pic-caption-comments .banner-pic-caption-comments-number {
-        position: absolute;
-        left: 50%;
-        top: 27%;
-        transform: translateX(-50%);
-        font-family: "Ubuntu", sans-serif;
-        font-weight: bold;
-        color: #fff;
-        font-size: 0.5rem;
-        line-height: 0.71rem; }
+      font-weight: bold;
+      color: #fff;
+      font-size: 0.5rem;
+      line-height: 0.71rem; }
 
 /**********************SM BREAKPOINT**********************/
 @media (min-width: 576px) {
@@ -986,7 +983,7 @@ CHANGES IN COMPARISON TO LATEST-SECTION MADE IN HTML THROUGH BOOTRSTAP CLASSES*/
     padding-bottom: 87px !important; }
     .contact-page .contact-form-wrapper {
       margin-bottom: 100px !important; } }
-/**********************SIGNUP SECTION GENERAL STYLE**********************/
+/**********************FOOTER GENERAL STYLE**********************/
 footer {
   padding-bottom: 20px !important;
   padding-top: 25px !important; }

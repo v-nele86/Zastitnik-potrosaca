@@ -1,8 +1,10 @@
 
-/**********************SIGNUP SECTION GENERAL STYLE**********************/
+/**********************FOOTER GENERAL STYLE**********************/
 footer{
+    //footer style
     padding-bottom: $footer-padd-bottom-mob !important;
     padding-top: $footer-padd-top-mob !important;
+    //footer navigation
     .footer-navigation{
         .footer-nav-list{
             .footer-nav-link{
@@ -19,6 +21,7 @@ footer{
             }
         }
     }
+    //footer social
     .footer-social{
         .footer-social-link{
             display: inline-block;
@@ -44,6 +47,7 @@ footer{
             }
         }
     }
+    //footer copyright
     .footer-copyright{
         .footer-copyright-text{
             color: $footer-copyright-font-color;
@@ -55,12 +59,13 @@ footer{
     }
 }
 
-
 /**********************LG BREAKPOINT**********************/
 @media(min-width: 992px){
+    //footer padding desk
     footer{
         padding-bottom: $footer-padd-bottom-desk !important;
         padding-top: $footer-padd-top-desk !important;
+        //footer navigation padding desk
         .footer-navigation{
             margin-bottom: $footer-navigation-margin-bottom-desk !important;
         }

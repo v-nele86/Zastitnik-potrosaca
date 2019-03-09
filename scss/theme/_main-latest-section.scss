@@ -2,16 +2,19 @@
 /**********************LATEST SECTION GENERAL STYLE**********************/
 .latest{
     .latest-ahead{
+        //latest title (header)
         .latest-title{
             letter-spacing: $latest-title-letter-spacing;
             line-height: $latest-title-line-height-mobile;
             font-size: $latest-title-font-size-mobile;
         }
+        //latest show more (p + arrows)
         .latest-all{
             font-family: $latest-all-font-family;
             font-size: $latest-all-font-size;
             line-height: $latest-all-line-height;
             letter-spacing: $latest-all-letter-spacing;
+            //latest show more - fa-icon (arrows) seting
             a{
                 position: relative;
                 padding-right: 25px;
@@ -32,18 +35,22 @@
             }
         }
     }
+    //latest news (article)
     .latest-item{
         border-radius: $latest-item-border-rad;
         background-color: $latest-item-bg;
         box-shadow: $latest-item-box-shadow;
         margin-bottom: $latest-item-margin-bottom-mobile;
+        //latest news content (div - upper part od article)
         .latest-item-content{
             padding: $latest-item-content-padd-y $latest-item-padd-x;
             border-bottom: $latest-item-content-border-bottom;
+            //content picture (figure)
             .latest-item-content-pic{
                 margin-bottom: $latest-item-figure-margin-bottom;
                 border-radius: $latest-item-figure-border-rad;
             }
+            //content description (header)
             .latest-item-content-description{
                 font-family: $latest-item-description-font-family;
                 font-weight: $latest-item-description-font-weight;
@@ -54,6 +61,7 @@
                 overflow: hidden;
             }
         }
+        //latest news info (div - lower part od article)
         .latest-item-info{
             padding: $latest-item-info-padd-top $latest-item-padd-x $latest-item-info-padd-bottom;
             font-size: $latest-item-info-font-size;
@@ -76,10 +84,8 @@
             }
         }
     }
+    //banner style
     .banner{
-/*        .latest-item-info{
-            display: none !important;
-        }*/
         .latest-item-content{
             border-bottom: none;
             .latest-item-content-pic{
@@ -90,6 +96,7 @@
                 height: $banner-content-description-height !important;
             }
         }
+        //banner caption
         .banner-pic-caption{
             position: absolute;
             bottom: 0;
@@ -99,6 +106,7 @@
             border-radius: $banner-caption-border-rad;
             //transform: scaleY(-1); - not apllied, instead changed from 0deg to 180deg
             background: $banner-caption-bg;
+            //banner caption newspaper&time
             .banner-pic-caption-time,
             .banner-pic-caption-newspaper{
                 font-family: $banner-caption-newspaper0time-font-family;
@@ -108,11 +116,12 @@
                 letter-spacing: $banner-caption-newspaper0time-letter-spacing;
             }
             .banner-pic-caption-time{
-                color: $danger;
+                color: $banner-caption-time-color;
             }
             .banner-pic-caption-newspaper{
-                color: $white;
+                color: $banner-caption-newspaper-color;
             }
+            //banner caption comments
             .banner-pic-caption-comments{
                 position: relative;
                 img{
@@ -138,6 +147,7 @@
 @media(min-width: 576px){
     .latest{
     .latest-ahead{
+        //latest title (header) size increase
         .latest-title{
             line-height: $latest-title-line-height-desk;
             font-size: $latest-title-font-size-desk;
@@ -149,6 +159,7 @@
 /**********************MD BREAKPOINT**********************/
 @media(min-width: 768px){
     .latest{
+        //latest ahead (div = title + show-more)
         .latest-ahead{
             margin-bottom: $latest-ahead-margin-bottom-desk !important;
         }
@@ -160,6 +171,7 @@
 
 /**********************LG BREAKPOINT**********************/
 @media(min-width: 992px){
+    //latest section desktop padding increase
     .latest{
         padding-top: $latest-section-padd-top-xl !important;
         padding-bottom: $latest-section-padd-bottom-xl !important;

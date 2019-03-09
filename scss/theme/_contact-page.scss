@@ -1,28 +1,26 @@
 
 /**********************CONTACT PAGE GENERAL STYLE**********************/
 .contact-page{
-    
+    //form style
     .contact-form{
         color: $contact-form-font-color;
         font-size: $contact-form-font-size;
         line-height: $contact-form-line-height;
         letter-spacing: $contact-form-letter-spacing;
-        
         .form-group{
             margin-bottom: $contact-form-group-margin-bottom;
         }
-        
+        //contact inputs
         input,
         textarea{
             border: $contact-form-input-border;
             border-radius: $contact-form-input-border-rad;
             background-color: $contact-form-input-bg-color;
         }
-        
         textarea{
             height: $contact-form-textarea-height;
         }
-        
+        //contact button
         .contact-form-submit{
             border-radius: $contact-form-btn-border-rad;
             font-family: $contact-form-btn-font-family;
@@ -37,6 +35,7 @@
 /**********************SS BREAKPOINT**********************/
 @media(min-width: 450px){
     .contact-page{
+        //contact article width limit
         .contact-page-item{
             max-width: 400px;
         }

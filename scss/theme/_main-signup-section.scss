@@ -1,9 +1,10 @@
 
 /**********************SIGNUP SECTION GENERAL STYLE**********************/
 .signup{
+    //signup section style
     background-color: $signup-section-bg;
     box-shadow: $signup-section-box-shadow;
-    
+    //info text style
     .signup-info-text{
         font-family: $signup-text-font-family;
         font-size: $signup-text-font-size;
@@ -11,6 +12,7 @@
         line-height: $signup-text-line-height;
         letter-spacing: $signup-text-letter-spacing;
     }
+    //signup button
     .signup-button{
         .btn{
             padding: $signup-btn-padd-y $signup-btn-padd-x;
@@ -29,6 +31,7 @@
 
 /**********************LG BREAKPOINT**********************/
 @media(min-width: 992px){
+    //signup section desktop padding
     .signup{
         padding: $signup-section-padd-y-xl 0 !important;
     }

@@ -1,18 +1,19 @@
 
 /**********************ABOUT PAGE GENERAL STYLE**********************/
 .about-page{
+    //about picture
     .about-page-pic{
         border-radius: $about-page-pic-border-rad;
         background-color: $about-page-pic-bg-color;
     }
-    
+    //about description
     .about-page-description{
         color: $about-page-description-font-color;
         font-size: $about-page-description-font-size;
         letter-spacing: $about-page-description-letter-spacing;
         line-height: $about-page-description-line-height;
     }
-    
+    //about content
     .about-page-content{
         letter-spacing: $about-page-content-letter-spacing;
     }
@@ -21,6 +22,7 @@
 /**********************MD BREAKPOINT**********************/
 @media(min-width: 768px){
     .about-page{
+        //about article width limit
         .about-page-item{
             width: 67%;
         }
@@ -31,13 +33,14 @@
 /**********************LG BREAKPOINT**********************/
 @media(min-width: 992px){
     .about-page{
+        //about page desktop padding
         padding-top: $about-page-padd-top-desk;
         padding-bottom: $about-page-padd-bottom-desk;
-        
+        //about picture
         .about-page-pic{
             margin-bottom: $about-page-pic-margin-bottom-desk !important;
         }
-        
+        //about description
         .about-page-description{
             margin-bottom: $about-page-description-margin-bottom-desk !important;
         }

@@ -104,36 +104,36 @@ $comments-content-font-size: 0.93rem;
 $comments-content-line-height: 1.26rem;
 
 /**********LATEST SECTION**********/
+//latest section
 $latest-section-padd-top-xl: 72px;
 $latest-section-padd-bottom-xl: 112px;
-//latest ahead
+//latest ahead (div = title + show-more)
 $latest-ahead-margin-bottom-desk: 26px;
-//latest title
+//latest title (header)
 $latest-title-letter-spacing: -0.49px;
 $latest-title-font-size-mobile: 2rem;
 $latest-title-line-height-mobile: 2.7rem;
 $latest-title-font-size-desk: $h1-font-size;
 $latest-title-line-height-desk: 3.71rem;
-//latest all
+//latest show more (p + arrows)
 $latest-all-font-family: $font-proximanova-bold;
-//$latest-all-font-color: $danger;
 $latest-all-font-size: 1.14rem;
 $latest-all-line-height: 1.43rem;
 $latest-all-letter-spacing: 0.16px;
 $latest-all-color: $danger;
-$latest-all-hover-color: darken($danger, 10%);
-//latest item - article
+$latest-all-hover-color: darken($latest-all-color, 10%);//variables were not made for fa-icon position
+//latest news (article)
 $latest-item-border-rad: 8px;
 $latest-item-bg: #fff;
 $latest-item-box-shadow: 0 15px 14px -10px rgba(88,112,148,0.31);
 $latest-item-padd-x: 23px;
-//latest item content
+//latest news content (div - upper part od article)
 $latest-item-content-padd-y: 26px;
 $latest-item-content-border-bottom: 1px solid #EBEBEB;
-//latest item content pic - figure
+//content picture (figure)
 $latest-item-figure-margin-bottom: 19px;
 $latest-item-figure-border-rad: 3px;
-//latest item content description
+//content description (header)
 $latest-item-description-font-family: $font-ubuntu;
 $latest-item-description-font-weight: 400;
 $latest-item-description-font-color: #464646;
@@ -142,7 +142,7 @@ $latest-item-description-letter-spacing: -0.09px;
 $latest-item-description-height: 8.2rem;
 $latest-item-margin-bottom-mobile: 20px;
 $latest-item-margin-bottom-desk: 26px;
-//latest item info
+//latest news info (div - lower part od article)
 $latest-item-info-padd-top: 11px;
 $latest-item-info-padd-bottom: 17px;
 $latest-item-info-font-size: 0.86rem;
@@ -165,6 +165,8 @@ $banner-caption-newspaper0time-font-weight: 500;
 $banner-caption-newspaper0time-font-size: 0.86rem;
 $banner-caption-newspaper0time-line-height: 1.14rem;
 $banner-caption-newspaper0time-letter-spacing: 0.05px;
+$banner-caption-time-color: $danger;
+$banner-caption-newspaper-color: $white;
 //banner caption comments
 $banner-caption-comments-img-scale: scale(0.7);
 $banner-caption-comments-number-position-left: 50%;
@@ -183,7 +185,7 @@ $signup-section-box-shadow: 0 15px 14px -10px rgba(88,112,148,0.31);
 //info text
 $signup-text-font-family: $font-adelle-bold;
 $signup-text-color: $primary;
-//$signup-text-font-size: 1.93rem;
+//$signup-text-font-size scaled from 1.93rem to 1.5rem because it will break into new line
 $signup-text-font-size: 1.5rem;
 $signup-text-line-height: 2.07rem;
 $signup-text-letter-spacing: -0.29px;
@@ -202,6 +204,7 @@ $signup-btn-letter-spacing: 0.15px;
 FOOTER VARIABLES
 *****************************/
 //footer background through bootsrap class in html
+//footer style
 $footer-padd-top-mob: 25px;
 $footer-padd-bottom-mob: 20px;
 $footer-padd-top-desk: 42px;
@@ -234,9 +237,14 @@ $footer-copyright-letter-spacing: -0.13px;
 /*****************************
 SINGLE-PAGE VARIABLES
 *****************************/
+//single-news page desktop padding
 $single-news-page-padd-top: 60px;
 $single-news-page-padd-bottom: 87px;
-//single-news item info
+//single news article
+$single-news-article-margin-bottom-desk: 26px;
+//single news header (upper part of single news item)
+$single-nes-header-border-bottom: 1px solid #EBEBEB;
+//single-news item info (author, date & comments)
 $single-news-item-info-font-size: 0.86rem;
 $single-news-item-info-line-height: 1.29rem;
 $single-news-item-info-letter-spacing: 0.17px;
@@ -260,6 +268,7 @@ $single-news-description-margin-bottom: 27px;
 //single-news item content
 $single-news-item-content-letter-spacing: -0.17px;
 //single news form title
+//color, font-family, weight & size inherited
 $single-news-title-line-height: 27px;
 $single-news-title-letter-spacing: -0.22px;
 //single-news all comments
@@ -271,47 +280,64 @@ $single-news-all-color: $latest-all-color;
 $single-news-all-hover-color: $latest-all-hover-color;
 //single-news form
 $single-news-form-margin-bottom: 25px;
-//single-news form item
+//form header
+$single-news-form-ahead-margin-bottom-desk: 35px;
+//single-news form item (form itself))
 $single-news-form-item-font-family: $font-proximanova-regular;
 $single-news-form-item-font-color: #333333;
 $single-news-form-item-font-size: 1.14rem;
 $single-news-form-item-line-height: 1.14rem;
 $single-news-form-item-letter-spacing: 0.06px;
-//single-news form textarea
+//form inputs
+$single-news-input0textarea-border: none;
+$single-news-input0textarea-border-rad: 3px;
+$single-news-input0textarea-bg-color: $white;
+//form button
+$single-news-button-font-family: $font-ubuntu;
+$single-news-button-font-weight: bold;
+$single-news-button-font-size: 1rem;
+$single-news-button-line-height: 1.36rem;
+$single-news-button-letter-spacing: 0.17px;
+$single-news-button-border-rad: 3px;
+$single-news-button-padd-y: 13px;
+$single-news-button-padd-x: 18px;
+//comment textarea
 $single-news-form-item-textarea-height: 19.35rem;
 $single-news-form-item-textarea-line-height: 1.29rem;
-//single-news form check
+//form check
 $single-news-form-answer-height: 47px;
 $single-news-form-answer-width: 104px;
-//single-news comments item
+//single comment
 $single-news-comments-item-margin-bottom: 18px;
 $single-news-comments-item-border-radius: 8px;
 $single-news-comments-item-bg-color: $white;
 $single-news-comments-item-box-shadow: 0 15px 14px -10px rgba(88,112,148,0.31);
-//single-news comments user
+//user picture (figure)
+$single-news-comments-user-picture-dimensions: 45px;
+//user name
 $single-news-comments-user-name-font-family: $font-ubuntu;
 $single-news-comments-user-name-font-weight: $font-weight-bold;
 $single-news-comments-user-name-font-color: #161616;
 $single-news-comments-user-name-font-size: 0.86rem;
 $single-news-comments-user-name-line-height: 1.07rem;
 $single-news-comments-user-name-letter-spacing: 0.26px;
-//single-news comments date
+//comment date
 $single-news-comments-user-date-font-size: 0.71rem;
 $single-news-comments-user-date-line-height: $latest-item-info-line-height;
 $single-news-comments-user-date-letter-spacing: 0.14px;
 $single-news-comments-user-date-color: $latest-item-info-date-color;
 $single-news-comments-user-date-font-family: $latest-item-description-font-family;
 $single-news-comments-user-date-font-weight: $latest-item-description-font-weight;
-//single-news comments content
+//comment content
 //font-family, weight & color inherited from body
 $single-news-comments-content-font-size: 0.86rem;
 $single-news-comments-content-line-height: 1.21rem;
 $single-news-comments-content-letter-spacing: -0.15px;
-//single news all comments
+//all comments link & fa
 $single-news-all-comments-margin-top: 31px;
 $single-news-all-comments-color: $primary;
 $single-news-all-comments-hover-color: lighten($single-news-all-comments-color, 20%);
-//single-news aside is generaly styled through .latest class, for separate styling .single-news-page-aside & bootrstrap classes were used
+/*single-news aside is generaly styled through .latest class, for separate styling .single-news-page-aside & bootrstrap classes were used*/
 
 /*****************************
 ABOUT-PAGE VARIABLES
@@ -345,10 +371,12 @@ $contact-form-font-size: $single-news-form-item-font-size;
 $contact-form-line-height: 1.71rem;
 $contact-form-letter-spacing: -0.17px;
 $contact-form-group-margin-bottom: 24px;
+//contact inputs
 $contact-form-textarea-height: 11.97rem;
 $contact-form-input-border: 1px solid #DCD8D7;
 $contact-form-input-border-rad: 2px;
 $contact-form-input-bg-color: transparent;
+//contact button
 $contact-form-btn-border-rad: 3px;
 $contact-form-btn-font-family: $font-proximanova-bold;
 $contact-form-btn-font-size: 1.07rem;
