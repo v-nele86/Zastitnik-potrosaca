@@ -485,14 +485,15 @@ header {
     header .navbar .navbar-nav .nav-link {
       text-align: center;
       color: #363739 !important;
-      font-family: "ProximaNova-Regular";
+      font-family: "Adelle-Bold";
       font-size: 1.14rem;
       letter-spacing: 0;
       padding: 0.5rem 1.14rem;
-      border-bottom: 1px solid #000; }
+      border-bottom: 1px solid #fff; }
       header .navbar .navbar-nav .nav-link:hover, header .navbar .navbar-nav .nav-link.active {
-        color: #000 !important;
-        background-color: #cfd0d2; }
+        color: #fff !important;
+        background-color: #E2322B;
+        border-bottom: 1px solid transparent; }
 
 /**********************SS BREAKPOINT**********************/
 @media (min-width: 450px) {
@@ -517,7 +518,8 @@ header {
     header .navbar .navbar-nav .nav-item:last-of-type .nav-link.active {
       font-weight: bold;
       background-color: transparent;
-      border-bottom: 3px solid #E2322B; }
+      border-bottom: 3px solid #E2322B;
+      color: #000 !important; }
   header .navbar .navbar-nav .nav-item {
     display: flex; }
   header .navbar .navbar-nav .nav-link {
@@ -537,7 +539,8 @@ header {
     header .navbar .navbar-nav .nav-link.active {
       font-weight: bold;
       background-color: transparent;
-      border-bottom: 3px solid #E2322B; } }
+      border-bottom: 3px solid #E2322B;
+      color: #000 !important; } }
 /**********************XL BREAKPOINT**********************/
 @media (min-width: 1200px) {
   header .navbar .navbar-nav .nav-link {
@@ -609,7 +612,7 @@ header {
     position: relative;
     padding-left: 45px; }
     .comments .comments-item .comments-title:before {
-      content: "”";
+      content: "ΓÇ¥";
       color: #9DC72D;
       font-size: 6rem;
       display: inline-block;
