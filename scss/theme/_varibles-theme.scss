@@ -93,14 +93,11 @@ $comments-item-arrow-right-position: 24px;
 $comments-title-font-family: $font-proximanova-bold;
 $comments-title-font-size: 1.14rem;
 $comments-title-line-height: 1.36rem;
-//comments title:before style (double quote)
-$comments-title-padd-left: 45px;
-$comments-title-before-content: '”';
+//comments title before style (double quote)
+$comments-title-padd-left: 36px;
 $comments-title-before-color: #9DC72D;
-$comments-title-before-font-size: 6rem;
-$comments-title-before-position-left: 0;
-$comments-title-before-position-top: 100%;
-$comments-title-before-font-family: arial;
+$comments-title-before-font-size: 1.7rem;
+$comments-title-before-font-weight: bold;
 //comments content (paragraph)
 $comments-content-font-family: $font-proximanova-regular;
 $comments-content-font-size: 0.93rem;
@@ -375,6 +372,7 @@ $contact-form-line-height: 1.71rem;
 $contact-form-letter-spacing: -0.17px;
 $contact-form-group-margin-bottom: 24px;
 //contact inputs
+$contact-form-input-height: 47px;
 $contact-form-textarea-height: 11.97rem;
 $contact-form-input-border: 1px solid #DCD8D7;
 $contact-form-input-border-rad: 2px;

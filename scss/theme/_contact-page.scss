@@ -17,6 +17,9 @@
             border-radius: $contact-form-input-border-rad;
             background-color: $contact-form-input-bg-color;
         }
+        input{
+            height: $contact-form-input-height;
+        }
         textarea{
             height: $contact-form-textarea-height;
         }

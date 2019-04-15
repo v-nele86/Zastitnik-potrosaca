@@ -17,6 +17,14 @@
             bottom: $comments-item-arrow-bottom-position;
             right: $comments-item-arrow-right-position;
         }
+        //comments title before style (double quote)
+        .comments-title-before{
+            position: absolute;
+            color: $comments-title-before-color;
+            font-size: $comments-title-before-font-size;
+            font-weight: $comments-title-before-font-weight;
+            top: 20px;
+        }
         //comments title (header)
         .comments-title{
             font-family: $comments-title-font-family;
@@ -24,17 +32,6 @@
             line-height: $comments-title-line-height;
             position: relative;
             padding-left: $comments-title-padd-left;
-            //comments title:before style (double quote)
-            &:before{
-                content: $comments-title-before-content;
-                color: $comments-title-before-color;
-                font-size: $comments-title-before-font-size;
-                display: inline-block;
-                position: absolute;
-                left: $comments-title-before-position-left;
-                top: $comments-title-before-position-top;
-                font-family: $comments-title-before-font-family;
-            }
         }
         //comments content (paragraph)
         .comments-content{

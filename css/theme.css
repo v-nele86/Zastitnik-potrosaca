@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*GOOGLE FONTS*/
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&subset=latin-ext");
 /*GENERATED FONTS*/
@@ -605,21 +604,18 @@ header {
     border-top: 12px solid #fff;
     bottom: -24px;
     right: 24px; }
+  .comments .comments-item .comments-title-before {
+    position: absolute;
+    color: #9DC72D;
+    font-size: 1.7rem;
+    font-weight: bold;
+    top: 20px; }
   .comments .comments-item .comments-title {
     font-family: "ProximaNova-Bold";
     font-size: 1.14rem;
     line-height: 1.36rem;
     position: relative;
-    padding-left: 45px; }
-    .comments .comments-item .comments-title:before {
-      content: "ΓÇ¥";
-      color: #9DC72D;
-      font-size: 6rem;
-      display: inline-block;
-      position: absolute;
-      left: 0;
-      top: 100%;
-      font-family: arial; }
+    padding-left: 36px; }
   .comments .comments-item .comments-content {
     font-family: "ProximaNova-Regular";
     font-size: 0.93rem;
@@ -961,6 +957,8 @@ CHANGES IN COMPARISON TO LATEST-SECTION MADE IN HTML THROUGH BOOTRSTAP CLASSES*/
     border: 1px solid #DCD8D7;
     border-radius: 2px;
     background-color: transparent; }
+  .contact-page .contact-form input {
+    height: 47px; }
   .contact-page .contact-form textarea {
     height: 11.97rem; }
   .contact-page .contact-form .contact-form-submit {
